@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <DisableOutOfProcTaskHost>true</DisableOutOfProcTaskHost>
@@ -10,9 +10,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>MaxLauncher</RootNamespace>
     <AssemblyName>MaxLauncher</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MyType>Custom</MyType>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <ExpressionBlendVersion>12.0.51020.0</ExpressionBlendVersion>
     <PublishUrl>publish\</PublishUrl>
@@ -44,6 +45,7 @@
     <WarningsAsErrors>
     </WarningsAsErrors>
     <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -60,6 +62,7 @@
     <WarningsAsErrors>
     </WarningsAsErrors>
     <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -96,6 +99,7 @@
     <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
     <WarningsAsErrors>
     </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <DefineTrace>true</DefineTrace>
@@ -109,12 +113,15 @@
     <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
     <WarningsAsErrors>
     </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'All|AnyCPU'">
     <OutputPath>bin\All\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'All|x86'">
     <OutputPath>bin\x86\All\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Interop.IWshRuntimeLibrary">
@@ -126,6 +133,7 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="WindowsBase" />
@@ -147,6 +155,7 @@
     <Compile Include="Configuration\ConfigManager.vb" />
     <Compile Include="Configuration\WindowConfig.vb" />
     <Compile Include="Configuration\PortableConfig.vb" />
+    <Compile Include="Data\ButtonIndex.vb" />
     <Compile Include="Data\FavoritesBarData.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -155,7 +164,9 @@
     <Compile Include="Data\FavoritesBarData.vb">
       <DependentUpon>FavoritesBarData.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Data\FileImporter.vb" />
     <Compile Include="Data\FileConverter.vb" />
+    <Compile Include="Data\FileImportLog.vb" />
     <Compile Include="Data\IconCacheDB.vb" />
     <Compile Include="Data\MLButtonData.vb" />
     <Compile Include="Data\MLTabData.vb" />

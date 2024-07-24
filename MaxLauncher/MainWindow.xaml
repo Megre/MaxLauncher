@@ -86,6 +86,9 @@
                     <MenuItem x:Name="dataOrganizeMenuItem" 
                               Header="{DynamicResource ResourceKey=MainMenu_Data_OrganizeDataFiles}"
                               Click="DataOrganizeMenuItem_Click"/>
+                    <MenuItem x:Name="dataImportMenuItem" 
+                              Header="{DynamicResource ResourceKey=MainMenu_File_Import}"
+                              Click="DataImportMenuItem_Click"/>
                     <Separator/>
                 </MenuItem>
                 <MenuItem Header="{DynamicResource ResourceKey=MainMenu_Tools}" SubmenuOpened="ToolsMenuItem_SubmenuOpened">

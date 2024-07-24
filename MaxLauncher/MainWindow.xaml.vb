@@ -819,6 +819,33 @@ Class MainWindow
         ConfigManager.SaveAppCfg()
     End Sub
 
+    Private Sub DataImportMenuItem_Click(sender As Object, e As RoutedEventArgs)
+        Me.Cursor = Cursors.Wait
+        Try
+            Dim srcFile = FileUtils.GetFilename(Me,
+                                                 IO.FileMode.Open,
+                                                 Localization.GetString("String_OpenFile"),
+                                                 My.Settings.APPLICATION_FILE_EXTENSION,
+                                                 My.Settings.APPLICATION_FILE_FILTER)
+            Dim destFile = TabControlData.GetInstance.Filename
+
+            If Not (String.IsNullOrEmpty(srcFile)) And Not (String.IsNullOrEmpty(destFile)) Then
+                Dim fileImporter As New FileImporter
+                fileImporter.ImportTabControlData(srcFile, destFile)
+                FileOpen(destFile)
+
+                Dim explorerPath = Environment.GetEnvironmentVariable("windir") & "\explorer.exe "
+                Interaction.Shell(explorerPath & fileImporter.GetLog.FileName, AppWinStyle.NormalFocus)
+            End If
+        Catch ex As Exception
+            MessageBoxML.Show(ex.Message, Localization.GetString("String_OpenFile"), MessageBoxButton.OK,
+                  MessageBoxImage.Error, MessageBoxResult.OK, ex.ToString)
+        Finally
+            Me.Cursor = Cursors.Arrow
+        End Try
+    End Sub
+
+
     ''' <summary>
     ''' Adds the current data file to the data file list under the Data menu item.
     ''' </summary>
@@ -871,9 +898,9 @@ Class MainWindow
     ''' Refreshes the data file entries under the Data menu item.
     ''' </summary>
     Private Sub DataMenuItemsRefresh()
-        While (dataMenuItem.Items.Count > 3)
-            RemoveHandler DirectCast(dataMenuItem.Items.Item(3), MenuItem).Click, AddressOf DataFileItem_Click
-            dataMenuItem.Items.RemoveAt(3)
+        While (dataMenuItem.Items.Count > 4)
+            RemoveHandler DirectCast(dataMenuItem.Items.Item(4), MenuItem).Click, AddressOf DataFileItem_Click
+            dataMenuItem.Items.RemoveAt(4)
         End While
 
         If (ConfigManager.AppConfig.DataFiles Is Nothing) Then Return
