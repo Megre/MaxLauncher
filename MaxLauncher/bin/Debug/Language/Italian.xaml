@@ -1,0 +1,314 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--Main Menu-->
+    <sys:String x:Key="MainMenu_File">_File</sys:String>
+    <sys:String x:Key="MainMenu_File_New">_Nuovo...</sys:String>
+    <sys:String x:Key="MainMenu_File_Open">_Apri...</sys:String>
+    <sys:String x:Key="MainMenu_File_SaveAs">Salva _come...</sys:String>
+    <sys:String x:Key="MainMenu_File_Import">_Importa...</sys:String>
+    <sys:String x:Key="MainMenu_File_Exit">_Esci</sys:String>
+
+    <sys:String x:Key="MainMenu_View">_Visualizza</sys:String>
+    <sys:String x:Key="MainMenu_View_DragandDropMode">Modalità _trascina e rilascia</sys:String>
+    <sys:String x:Key="MainMenu_View_AutoHide">_Nascondi automaticamente</sys:String>
+    <sys:String x:Key="MainMenu_View_AlwaysonTop">Sempre _visibile</sys:String>
+    <sys:String x:Key="MainMenu_View_CenteronScreen">_Centra nello schermo</sys:String>
+    <sys:String x:Key="MainMenu_View_LockGUI">_Blocca GUI</sys:String>
+    <sys:String x:Key="MainMenu_View_HideEmptyTabButtons">Nascondi _pulsanti scheda vuota</sys:String>
+    <sys:String x:Key="MainMenu_View_HideTabButtonsRow">Nascondi _riga pulsanti scheda</sys:String>
+    <sys:String x:Key="MainMenu_View_HideTabButtonsRow1">Riga _1</sys:String>
+    <sys:String x:Key="MainMenu_View_HideTabButtonsRow2">Riga _2</sys:String>
+    <sys:String x:Key="MainMenu_View_HideTabButtonsRow3">Riga _3</sys:String>
+
+    <sys:String x:Key="MainMenu_Data">_Dati</sys:String>
+    <sys:String x:Key="MainMenu_Data_AddCurrentDataFile">Aggiungi file dei dati attuali</sys:String>
+    <sys:String x:Key="MainMenu_Data_OrganizeDataFiles">Organizza i file dei dati...</sys:String>
+
+    <sys:String x:Key="MainMenu_Tools">_Strumenti</sys:String>
+    <sys:String x:Key="MainMenu_Tools_OpenStartMenuUser">Apri menu avvio (_Utente)</sys:String>
+    <sys:String x:Key="MainMenu_Tools_OpenStartMenuAllUsers">Apri menu avvio (_Tutti gli utenti)</sys:String>
+    <sys:String x:Key="MainMenu_Tools_OpenControlPanel">Apri _pannello di controllo</sys:String>
+    <sys:String x:Key="MainMenu_Tools_OpenAppsFolder">Apri _cartella applicazioni</sys:String>
+    <sys:String x:Key="MainMenu_Tools_ViewGroupLaunchList">Visualizza lista di avvio del _gruppo</sys:String>
+
+    <sys:String x:Key="MainMenu_Settings">_Impostazioni</sys:String>
+    <sys:String x:Key="MainMenu_Settings_Hotkey">_Scorciatoia...</sys:String>
+    <sys:String x:Key="MainMenu_Settings_Theme">_Tema...</sys:String>
+    <sys:String x:Key="MainMenu_Settings_Options">_Opzioni...</sys:String>
+
+    <sys:String x:Key="MainMenu_Help">_Aiuto</sys:String>
+    <sys:String x:Key="MainMenu_Help_VisitWebSite">Visita il sito _Web</sys:String>
+    <sys:String x:Key="MainMenu_Help_CheckForUpdatesNow">Controlla per _aggiornamenti ora</sys:String>
+    <sys:String x:Key="MainMenu_Help_ProgramInformation">_Info programma</sys:String>
+    <sys:String x:Key="MainMenu_Help_About">_Info</sys:String>
+
+    <!--Start Dialog-->
+    <sys:String x:Key="StartDialog_Title">Avvio</sys:String>
+    <sys:String x:Key="StartDialog_NewFile">_Nuovo file</sys:String>
+    <sys:String x:Key="StartDialog_OpenFile">_Apri file</sys:String>
+
+    <!--TabControl ContextMenu-->
+    <sys:String x:Key="TabControl_ContextMenu_Rename">Rino_mina</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Add">_Aggiungi</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Copy">_Copia</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Paste">_Incolla</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Delete">_Elimina</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Clear">Ca_ncella</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_SortButtonsBy">_Ordina pulsanti per...</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Name">_Nome</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Target">_Destinazione</sys:String>
+
+    <!--Options Dialog-->
+    <sys:String x:Key="OptionsDialog_Title">Opzioni</sys:String>
+    <sys:String x:Key="OptionsDialog_GroupBox_General">Generale</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_MinimizeOnClose">Mi_nimizza alla chiusura</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_ShowInTaskbar">Mostra nella barra delle _applicazioni</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_StartMinimized">Avvia _minimizzato</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_AutoSelectTab">Selezione automatica _scheda</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_HideMenu">Nascondi m_enu (premi Alt per mostrare)</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_OpenLastFileUsed">Apri ultimo _file utilizzato</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_CheckForUpdateOnStartup">Verifica _aggiornamenti all'avvio</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_SingleInstance">_Istanza singola</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_MouseDoubleClick">_Doppio clic del mouse per avviare</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_PressKeyTwiceToLaunch">Premi 2 _volte il tasto per avviare</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_AlwaysUseApplicationTheme">Usa sempre il t_ema dell'applicazione</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_ArrowKeysSelectsTabs">Usa i tasti _freccia per selezionare le schede</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_HideButtonIcons">Nasc_ondi icone pulsanti</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_FolderPathAsTarget">Usa percorso della _cartella come Destinazione</sys:String>
+    <sys:String x:Key="OptionsDialog_Label_Language">_Lingua:</sys:String>
+
+    <!--Hotkey Dialog-->
+    <sys:String x:Key="HotkeyDialog_Title">Scorciatoia</sys:String>
+    <sys:String x:Key="HotkeyDialog_GroupBox_Hotkey">Scorciatoia</sys:String>
+    <sys:String x:Key="HotkeyDialog_Label_Key">Tasto:</sys:String>
+    <sys:String x:Key="HotkeyDialog_Label_Status">Stato:</sys:String>
+    <sys:String x:Key="HotkeyDialog_Label_ActiveTab">Attiva _scheda:</sys:String>
+    <sys:String x:Key="HotkeyDialog_String_LastUsed">Ultimo usato:</sys:String>
+
+    <!--DataFiles Dialog-->
+    <sys:String x:Key="DataFilesDialog_Title">Organizza i file dati</sys:String>
+    <sys:String x:Key="DataFilesDialog_Label_DataFiles">File dei dati:</sys:String>
+    <sys:String x:Key="DataFilesDialog_ListView_Header_MenuName">Nome del menu</sys:String>
+    <sys:String x:Key="DataFilesDialog_ListView_Header_Filename">Nome del file</sys:String>
+    <sys:String x:Key="DataFilesDialog_Button_MoveUp">Sposta _su</sys:String>
+    <sys:String x:Key="DataFilesDialog_Button_MoveDown">Sposta _giù</sys:String>
+    <sys:String x:Key="DataFilesDialog_Button_Remove">_Rimuovi</sys:String>
+    <sys:String x:Key="DataFilesDialog_Button_Sort">_Ordina</sys:String>
+
+    <!--MaxLauncher Button ContextMenu-->
+    <sys:String x:Key="MButton_ContextMenu_OpenFileLocation">Apri la _posizione del file</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Edit">_Modifica</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Cut">Tag_lia</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Copy">_Copia</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Paste">_Incolla</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Delete">_Elimina</sys:String>
+
+    <!--Property Editor Dialog-->
+    <sys:String x:Key="PropertyEditorDialog_Title">Editor tema personalizzato</sys:String>
+
+    <!--Input Dialog-->
+    <sys:String x:Key="InputDialog_Title_RenameTab">Rinomina scheda</sys:String>
+    <sys:String x:Key="InputDialog_Label_Tabname">_Nome scheda:</sys:String>
+
+    <!--Program Information Dialog-->
+    <sys:String x:Key="ProgramInformationDialog_Title">Info programma</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_Version">Versione:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_ProgramDirectory">Cartella del programma:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_ThemesDirectory">Cartella dei temi:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_LanguageDirectory">Cartella delle lingue:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_ShortcutsDirectory">Cartella delle scorciatoie:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_AppCfg">app.cfg:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_FavoritesCfg">favorites.cfg:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_IconCache">iconcache.mldb:</sys:String>
+
+    <!--Theme Dialog-->
+    <sys:String x:Key="ThemeDialog_Title">Tema</sys:String>
+    <sys:String x:Key="ThemeDialog_Label_SelectTheme">Seleziona _tema:</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Add">_Aggiungi</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Delete">_Elimina</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Copy">C_opia</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Customize">_Personalizza</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Reset">_Ripristina</sys:String>
+
+    <!--About Dialog-->
+    <sys:String x:Key="AboutDialog_Title">Info MaxLauncher</sys:String>
+
+    <!--EditButton Dialog-->
+    <sys:String x:Key="EditButtonDialog_Title">Modifica pulsante</sys:String>
+    <sys:String x:Key="EditButtonDialog_Tab_Properties">_Proprietà</sys:String>
+    <sys:String x:Key="EditButtonDialog_Tab_Window">Finestra</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Name">_Nome:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Target">_Destinazione:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Arguments">_Argomenti:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_StartIn">_Avvia in:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Run">_Esegui:</sys:String>
+    <sys:String x:Key="EditButtonDialog_CheckBox_RunAsAdministrator">Esegui come a_mministratore:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_WindowTitle">_Titolo finestra:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_WindowProcessName">Nome del _processo:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_GroupID">_ID del gruppo:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Button_ViewList">Visualizza _lista</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_RunComboBox_Normal">Normale</sys:String>
+    <sys:String x:Key="EditButtonDialog_RunComboBox_Hidden">Nascosto</sys:String>
+    <sys:String x:Key="EditButtonDialog_RunComboBox_Minimized">Minimizzato</sys:String>
+    <sys:String x:Key="EditButtonDialog_RunComboBox_Maximized">Massimizzato</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_IconComboBox_Select">Seleziona...</sys:String>
+    <sys:String x:Key="EditButtonDialog_IconComboBox_DefaultIcon">Icona predefinita</sys:String>
+    <sys:String x:Key="EditButtonDialog_IconComboBox_BrowseIcon">Sfoglia icona...</sys:String>
+    <sys:String x:Key="EditButtonDialog_IconComboBox_BrowseImage">Sfoglia immagine...</sys:String>
+    
+    <sys:String x:Key="EditButtonDialog_TargetComboBox_Browse">Sfoglia...</sys:String>
+    <sys:String x:Key="EditButtonDialog_TargetComboBox_File">File...</sys:String>
+    <sys:String x:Key="EditButtonDialog_TargetComboBox_Folder">Cartella...</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_Button_BrowseFolder">Sfoglia _cartella...</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_GroupBox_LocationSize">Posizione/Dimensione</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_LocationSizePresets">Posizione/Dimensione _predefinite:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_LocationSizePresetsComment">Richiede esecuzione=Normale e titolo della finestra=&quot;Titolo&quot;.</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_GroupBox_Custom">Personalizza</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_ReferenceWindow">Finestra di _riferimento:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Left">_Sinistra</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Top">_Alto</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Width">_Larghezza</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Height">_Altezza</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Normal">Normale</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Left">Sinistra</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Right">Destra</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Top">Alto</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Bottom">Basso</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_TopLeft">Alto a sinistra</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_BottomLeft">Basso a sinistra</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_TopRight">Alto a destra</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_BottomRight">Basso a destra</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Custom">Personalizza</sys:String>
+    
+    <!--GroupLaunch Dialog-->
+    <sys:String x:Key="GroupLaunchDialog_Title">Lista dei gruppi</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_Label_List">Lista dei gruppi</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_GroupLaunchID">ID dei gruppi</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_TabNumber">Numero scheda</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_TabName">Nome scheda</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_ButtonKey">Tasto del pulsante</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_ButtonName">Testo del pulsante</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_Target">Destinazione</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_Arguments">_Argomenti</sys:String>
+
+    <!--MessageBox-->
+    <sys:String x:Key="MessageBox_Expander_Details">Dettagli</sys:String>
+    <sys:String x:Key="MessageBox_Title_LoadingConfiguration">Caricamento della configurazione</sys:String>
+    <sys:String x:Key="MessageBox_Message_OKtoexit">Premi OK per uscire.</sys:String>
+    <sys:String x:Key="MessageBox_Title_InitializingFavoritesBar">Inizializzazione barra dei preferiti</sys:String>
+    <sys:String x:Key="MessageBox_Message_OKtocontinue">Premi OK per continuare.</sys:String>
+    <sys:String x:Key="MessageBox_Title_InitializingIconCacheDB">Inizializzazione IconCacheDB</sys:String>
+
+    <!--Global-->
+    <sys:String x:Key="Button_Yes">_Si</sys:String>
+    <sys:String x:Key="Button_No">_No</sys:String>
+    <sys:String x:Key="Button_Close">_Chiudi</sys:String>
+    <sys:String x:Key="Button_OK">_OK</sys:String>
+    <sys:String x:Key="Button_Cancel">_Annulla</sys:String>
+
+    <sys:String x:Key="String_Theme">Tema</sys:String>
+    <sys:String x:Key="String_Language">Lingua</sys:String>
+    <sys:String x:Key="String_NewFile">Nuovo file</sys:String>
+    <sys:String x:Key="String_OpenFile">Apri file</sys:String>
+    <sys:String x:Key="String_SaveFileAs">Salva file come</sys:String>
+    <sys:String x:Key="String_Hotkey">Scorciatoia</sys:String>
+    <sys:String x:Key="String_HotkeyRegistrationFailed">Registrazione della scorciatoia {0} non riuscita.</sys:String>
+    <sys:String x:Key="String_Update">Aggiorna</sys:String>
+    <sys:String x:Key="String_IsUpToDate">è aggiornato.</sys:String>
+    <sys:String x:Key="String_NewVersionAvailable">Una nuova versione è disponibile per il download.</sys:String>
+    <sys:String x:Key="String_VisitWebsite">Vuoi visitare il sito Web per il download?</sys:String>
+    <sys:String x:Key="String_SaveAs">Salva come</sys:String>
+    <sys:String x:Key="String_ImportFile">Importa file</sys:String>
+    <sys:String x:Key="String_ErrorLoadingDataFile">Errore caricamento file dati</sys:String>
+    <sys:String x:Key="String_DataFiles">File dati</sys:String>
+
+    <sys:String x:Key="String_ErrorOpeningFile">Errore apertura file {0}.</sys:String>
+    <sys:String x:Key="String_ErrorLoadingFile">Errore caricamento file {0}.</sys:String>
+    <sys:String x:Key="String_ErrorSavingFile">Errore salvataggio file {0}.</sys:String>
+    <sys:String x:Key="String_SavingFavoritesBarData">Salvataggio dati della barra dei preferiti</sys:String>
+    <sys:String x:Key="String_SavingData">Salvataggio dati</sys:String>
+    <sys:String x:Key="String_SavingIconCacheDatabase">Salvataggio database della cache icone</sys:String>
+    <sys:String x:Key="String_SavingApplicationConfiguration">Salvataggio configurazione applicazione</sys:String>
+
+    <sys:String x:Key="String_ButtonDragAndDrop">Pulsante trascina e rilascia</sys:String>
+    <sys:String x:Key="String_OpenFileLocation">Apri posizione file</sys:String>
+    <sys:String x:Key="String_UnableToOpenFolder">Impossibile aprire la cartella {0}.</sys:String>
+    <sys:String x:Key="String_Edit">Modifica</sys:String>
+    <sys:String x:Key="String_Cut">Taglia</sys:String>
+    <sys:String x:Key="String_Copy">Copia</sys:String>
+    <sys:String x:Key="String_Replace">Sostituisci</sys:String>
+    <sys:String x:Key="String_ReplaceButton">Sostituisci il pulsante '( {0} ) {1}' ?</sys:String>
+    <sys:String x:Key="String_Paste">Incolla</sys:String>
+    <sys:String x:Key="String_Delete">Elimina</sys:String>
+    <sys:String x:Key="String_DeleteButton">Elimina il pulsante '( {0} ) {1}' ?</sys:String>
+    <sys:String x:Key="String_Sort">Ordina</sys:String>
+    <sys:String x:Key="String_SortButtons">L'ordinamento dei pulsanti della scheda non può essere annullato. Vuoi continuare ?</sys:String>
+    <sys:String x:Key="String_FileExistsReplace">Il file {0} esiste già. Vuoi sostituirlo?</sys:String>
+    <sys:String x:Key="String_FileReplaceError">Errore sostituzione file {0}.</sys:String>
+
+    <sys:String x:Key="String_TabDragandDrop">Trascina e rilascia la scheda </sys:String>
+    <sys:String x:Key="String_ReplaceTab">"Vuoi sostituire la scheda ({0}) {1} ?"</sys:String>
+    <sys:String x:Key="String_DeleteTabWarning">L'eliminazione di una scheda è irreversibile. Sei sicuro di voler eliminare la scheda ""{0}"" ?</sys:String>
+    <sys:String x:Key="String_DeleteTab">Elimina scheda</sys:String>
+    <sys:String x:Key="String_ClearTabWarning">La cancellazione di una scheda non può essere annullata. Sei sicuro di voler cancellare la scheda "{0}" ?</sys:String>
+    <sys:String x:Key="String_ClearTab">Cancella scheda</sys:String>
+    <sys:String x:Key="String_ErrorOpening">Errore apertura {0}</sys:String>
+    <sys:String x:Key="String_Run">Esegui</sys:String>
+    <sys:String x:Key="String_ErrorOpeningFavoritesBarConfig">Errore apertura file di configurazione della barra dei preferiti {0}.</sys:String>
+    <sys:String x:Key="String_ErrorSavingFavoritesBarConfig">Errore salvataggio file di configurazione della barra dei preferiti {0}.</sys:String>
+
+    <sys:String x:Key="String_ErrorConvertingFile">Errore conversione da {0} a {1}</sys:String>
+    <sys:String x:Key="String_ErrorSavingIconCache">Errore salvataggio cache delle icone {0}.</sys:String>
+    <sys:String x:Key="String_ErrorOpeningIconCache">Errore apertura cache delle icone {0}.</sys:String>
+
+    <sys:String x:Key="String_Version">Versione</sys:String>
+
+    <sys:String x:Key="String_SelectWorkingDirectory">Seleziona cartella di lavoro:</sys:String>
+    <sys:String x:Key="String_EmptyTarget">La destinazione non può essere vuota!</sys:String>
+    <sys:String x:Key="String_EditButton">Modifica pulsante</sys:String>
+    <sys:String x:Key="String_CustomWindowSize">Personalizza dimensione finestra</sys:String>
+    <sys:String x:Key="String_LeftMustBeZeroOrGreater">"A sinistra deve essere maggiore o uguale a zero."</sys:String>
+    <sys:String x:Key="String_TopMustBeZeroOrGreater">"In alto deve essere maggiore o uguale a zero."</sys:String>
+    <sys:String x:Key="String_WidthMustBeZeroOrGreater">"La larghezza deve essere maggiore o uguale a zero."</sys:String>
+    <sys:String x:Key="String_HeightMustBeZeroOrGreater">"L'altezza deve essere maggiore o uguale a zero."</sys:String>
+    <sys:String x:Key="String_SelectFile">Seleziona file</sys:String>
+    <sys:String x:Key="String_SelectFolder">Seleziona cartella:</sys:String>
+    <sys:String x:Key="String_SelectImageFile">Seleziona un file immagine</sys:String>
+    <sys:String x:Key="String_Available">Disponibile</sys:String>
+    <sys:String x:Key="String_Unavailable">Indisponibile</sys:String>
+
+    <sys:String x:Key="String_InvalidValueFor">Valore non valido per '{0}'.</sys:String>
+    <sys:String x:Key="String_CustomTheme">Personalizza tema</sys:String>
+
+    <sys:String x:Key="String_ErrorApplyingTheme">Errore durante l'applicazione del tema '{0}'.</sys:String>
+    <sys:String x:Key="String_AddTheme">Aggiungi tema</sys:String>
+    <sys:String x:Key="String_DeleteTheme">Elimina tema</sys:String>
+    <sys:String x:Key="String_DeleteSelectedTheme">Vuoi eliminare il tema {0} ?</sys:String>
+    <sys:String x:Key="String_CopyTheme">Copia tema</sys:String>
+    <sys:String x:Key="String_ThemeName">Nome tema:</sys:String>
+    <sys:String x:Key="String_PleaseEnterAName">Inserisci un nome.</sys:String>
+    <sys:String x:Key="String_DirExistsChooseAnother">La cartella '{0}' esiste già. Scegli un altro nome.</sys:String>
+    <sys:String x:Key="String_ResetTheme">Ripristina tema</sys:String>
+    <sys:String x:Key="String_UseDefaultsForThisTheme">Vuoi utilizzare i valori predefiniti per questo tema?</sys:String>
+    <sys:String x:Key="String_UnableToResetTheme">Impossibile ripristinare il tema.</sys:String>
+    <sys:String x:Key="String_ErrorCreatingCustomFile">Errore creazione file personalizzato.</sys:String>
+    <sys:String x:Key="String_ErrorSavingChanges">Errore salvataggio modifiche.</sys:String>
+
+    <sys:String x:Key="String_ErrorSettingLanguage">Errore impostazione lingua '{0}'.</sys:String>
+
+    <sys:String x:Key="String_SystemTrayMenuExit">E&amp;sci</sys:String>
+    <sys:String x:Key="String_SystemTrayMenuShow">&amp;Mostra {0}</sys:String>
+
+    <sys:String x:Key="String_WindowCannotBeNothing">La finestra non può essere vuota durante la registrazione della scorciatoia.</sys:String>
+
+    <sys:String x:Key="String_UpdateCheckFailed">Verifica aggiornamenti fallita.</sys:String>
+
+</ResourceDictionary>

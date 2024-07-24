@@ -1,0 +1,84 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        mc:Ignorable="d" 
+        x:Class="DataFilesDialog"
+        Title="{DynamicResource ResourceKey=DataFilesDialog_Title}"
+        WindowStartupLocation="CenterOwner"
+        Height="500" MinWidth="500" SizeToContent="Width"
+        ShowInTaskbar="False" d:DesignWidth="500" 
+        Loaded="DataFilesDialog_Loaded"
+        d:DesignHeight="400"
+        Initialized="DataFilesDialog_Initialized"
+        FocusManager.FocusedElement="{Binding ElementName=dataFilesListView}"
+        Style="{DynamicResource DataFilesDialogWindowStyle}">
+
+    <Window.Resources>
+        <Style x:Key="DataFilesListViewItemStyle" TargetType="{x:Type ListViewItem}">
+            <Setter Property="IsTabStop" Value="False" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <EventSetter Event="GotKeyboardFocus" Handler="DataFileItem_GotKeyboardFocus"/>
+            <EventSetter Event="PreviewKeyDown" Handler="DataFileItem_PreviewKeyDown"/>
+        </Style>
+        <Style x:Key="DataFilesListViewTextBoxStyle" TargetType="{x:Type TextBox}">
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="MinHeight" Value="22" />
+        </Style>
+
+    </Window.Resources>
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Content="{DynamicResource DataFilesDialog_Label_DataFiles}" HorizontalAlignment="Left"/>
+        <ListView x:Name="dataFilesListView" Grid.Row="1" Grid.Column="0" 
+                HorizontalContentAlignment="Stretch"
+                SnapsToDevicePixels="True"
+                SelectionMode="Single"
+                Initialized="DataFilesListView_Initialized"
+                Loaded="DataFilesListView_Loaded"
+                SelectionChanged="DataFilesListView_SelectionChanged"
+                ItemContainerStyle="{DynamicResource DataFilesListViewItemStyle}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="{DynamicResource DataFilesDialog_ListView_Header_MenuName}">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox x:Name="DataFilesListViewTextBox" Text="{Binding menuname}" Style="{DynamicResource DataFilesListViewTextBoxStyle}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="{DynamicResource DataFilesDialog_ListView_Header_Filename}" DisplayMemberBinding="{Binding filename}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <StackPanel 
+            Grid.Row="2"
+			Orientation="Horizontal"
+			HorizontalAlignment="Center"
+			Margin="5" >
+            <Button x:Name="moveUpButton" Grid.Row="1" Content="{DynamicResource DataFilesDialog_Button_MoveUp}" HorizontalAlignment="Center" Click="MoveUpButton_Click"
+				MinWidth="75" MinHeight="25" Margin="5" SnapsToDevicePixels="True"/>
+            <Button x:Name="moveDownButton" Grid.Row="1" Content="{DynamicResource DataFilesDialog_Button_MoveDown}" HorizontalAlignment="Center" Click="MoveDownButton_Click"
+				MinWidth="75" MinHeight="25" Margin="5" SnapsToDevicePixels="True"/>
+            <Button x:Name="removeButton" Grid.Row="1" Content="{DynamicResource DataFilesDialog_Button_Remove}" HorizontalAlignment="Center" Click="RemoveButton_Click"
+				MinWidth="75" MinHeight="25" Margin="5" SnapsToDevicePixels="True"/>
+            <Button x:Name="sortButton" Grid.Row="1" Content="{DynamicResource DataFilesDialog_Button_Sort}" HorizontalAlignment="Center" Click="SortButton_Click"
+				MinWidth="75" MinHeight="25" Margin="5" SnapsToDevicePixels="True"/>
+        </StackPanel>
+
+        <Button Grid.Row="5" Content="{DynamicResource Button_Close}" HorizontalAlignment="Center" IsCancel="True"
+			MinWidth="75" MinHeight="25" Margin="0,10,0,0" SnapsToDevicePixels="True" IsDefault="True" Click="CloseButton_Click"/>
+    </Grid>
+</Window>

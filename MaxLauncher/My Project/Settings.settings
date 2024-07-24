@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="APPLICATION_FILE_EXTENSION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.mld</Value>
+    </Setting>
+    <Setting Name="APPLICATION_FILE_FILTER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MaxLauncher documents|*.mld</Value>
+    </Setting>
+    <Setting Name="MAL_FILE_EXTENSION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.mal</Value>
+    </Setting>
+    <Setting Name="MAL_FILE_FILTER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MadAppLauncher documents|*.mal</Value>
+    </Setting>
+    <Setting Name="GAVersionFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://madproton.users.sourceforge.net/maxlauncher/version/ga_version.txt</Value>
+    </Setting>
+    <Setting Name="BetaVersionFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://madproton.users.sourceforge.net/maxlauncher/version/beta_version.txt</Value>
+    </Setting>
+    <Setting Name="AppWebsite" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://maxlauncher.sourceforge.io</Value>
+    </Setting>
+    <Setting Name="EMAIL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">madproton@gmail.com</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

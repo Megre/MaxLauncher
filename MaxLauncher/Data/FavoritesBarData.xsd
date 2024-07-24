@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FavoritesBarData" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Button" msprop:Generator_TableClassName="ButtonDataTable" msprop:Generator_TableVarName="tableButton" msprop:Generator_TablePropName="Button" msprop:Generator_RowDeletingName="ButtonRowDeleting" msprop:Generator_RowChangingName="ButtonRowChanging" msprop:Generator_RowEvHandlerName="ButtonRowChangeEventHandler" msprop:Generator_RowDeletedName="ButtonRowDeleted" msprop:Generator_UserTableName="Button" msprop:Generator_RowChangedName="ButtonRowChanged" msprop:Generator_RowEvArgName="ButtonRowChangeEvent" msprop:Generator_RowClassName="ButtonRow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="ID" type="xs:short" />
+        <xs:element name="Text" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Text" msprop:Generator_ColumnVarNameInTable="columnText" msprop:Generator_ColumnPropNameInTable="TextColumn" msprop:Generator_UserColumnName="Text" type="xs:string" minOccurs="0" />
+        <xs:element name="IconFile" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="IconFile" msprop:Generator_ColumnVarNameInTable="columnIconFile" msprop:Generator_ColumnPropNameInTable="IconFileColumn" msprop:Generator_UserColumnName="IconFile" type="xs:string" minOccurs="0" />
+        <xs:element name="IconIndex" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="IconIndex" msprop:Generator_ColumnVarNameInTable="columnIconIndex" msprop:Generator_ColumnPropNameInTable="IconIndexColumn" msprop:Generator_UserColumnName="IconIndex" type="xs:short" default="0" minOccurs="0" />
+        <xs:element name="Filename" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Filename" msprop:Generator_ColumnVarNameInTable="columnFilename" msprop:Generator_ColumnPropNameInTable="FilenameColumn" msprop:Generator_UserColumnName="Filename" type="xs:string" minOccurs="0" />
+        <xs:element name="Arguments" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Arguments" msprop:Generator_ColumnVarNameInTable="columnArguments" msprop:Generator_ColumnPropNameInTable="ArgumentsColumn" msprop:Generator_UserColumnName="Arguments" type="xs:string" minOccurs="0" />
+        <xs:element name="WorkingDirectory" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WorkingDirectory" msprop:Generator_ColumnVarNameInTable="columnWorkingDirectory" msprop:Generator_ColumnPropNameInTable="WorkingDirectoryColumn" msprop:Generator_UserColumnName="WorkingDirectory" type="xs:string" minOccurs="0" />
+        <xs:element name="Description" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+        <xs:element name="WindowStyle" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="WindowStyle" msprop:Generator_ColumnVarNameInTable="columnWindowStyle" msprop:Generator_ColumnPropNameInTable="WindowStyleColumn" msprop:Generator_UserColumnName="WindowStyle" type="xs:short" default="0" minOccurs="0" />
+        <xs:element name="WindowStyleEx" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="WindowStyleEx" msprop:Generator_ColumnVarNameInTable="columnWindowStyleEx" msprop:Generator_ColumnPropNameInTable="WindowStyleExColumn" msprop:Generator_UserColumnName="WindowStyleEx" type="xs:short" default="0" minOccurs="0" />
+        <xs:element name="RunAsAdmin" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="RunAsAdmin" msprop:Generator_ColumnVarNameInTable="columnRunAsAdmin" msprop:Generator_ColumnPropNameInTable="RunAsAdminColumn" msprop:Generator_UserColumnName="RunAsAdmin" type="xs:boolean" default="false" minOccurs="0" />
+        <xs:element name="WindowTitle" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WindowTitle" msprop:Generator_ColumnVarNameInTable="columnWindowTitle" msprop:Generator_ColumnPropNameInTable="WindowTitleColumn" msprop:Generator_UserColumnName="WindowTitle" type="xs:string" minOccurs="0" />
+        <xs:element name="WindowProcessName" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="WindowProcessName" msprop:Generator_ColumnVarNameInTable="columnWindowProcessName" msprop:Generator_ColumnPropNameInTable="WindowProcessNameColumn" msprop:Generator_UserColumnName="WindowProcessName" type="xs:string" minOccurs="0" />
+        <xs:element name="WindowRect" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="WindowRect" msprop:Generator_ColumnVarNameInTable="columnWindowRect" msprop:Generator_ColumnPropNameInTable="WindowRectColumn" msprop:Generator_UserColumnName="WindowRect" type="xs:string" minOccurs="0" />
+        <xs:element name="GroupID" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="GroupID" msprop:Generator_ColumnVarNameInTable="columnGroupID" msprop:Generator_ColumnPropNameInTable="GroupIDColumn" msprop:Generator_UserColumnName="GroupID" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FavoritesBarData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FavoritesBarData" msprop:Generator_UserDSName="FavoritesBarData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Button" />
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//Button" />
+      <xs:field xpath="ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

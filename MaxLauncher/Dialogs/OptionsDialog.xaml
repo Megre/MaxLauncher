@@ -1,0 +1,57 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:MaxLauncher" x:Class="OptionsDialog"
+    Title="{DynamicResource OptionsDialog_Title}" MinWidth="250" MinHeight="250"
+    WindowStartupLocation="CenterOwner" ResizeMode="NoResize" SizeToContent="WidthAndHeight" ShowInTaskbar="False"
+    Initialized="OptionsDialog_Initialized"
+    FocusManager.FocusedElement="{Binding ElementName=showInTaskbarCB}"
+    Style="{DynamicResource OptionsDialogWindowStyle}">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Row="0" Header="{DynamicResource OptionsDialog_GroupBox_General}" Padding="15">
+            <Grid>
+                <StackPanel>
+                    <CheckBox x:Name="showInTaskbarCB" Content="{DynamicResource OptionsDialog_CheckBox_ShowInTaskbar}" IsChecked="{Binding ShowInTaskbar, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_StartMinimized}" IsChecked="{Binding StartMinimized, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_MinimizeOnClose}" IsChecked="{Binding MinimizeOnClose, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_OpenLastFileUsed}" IsChecked="{Binding OpenLastFileUsed, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_CheckForUpdateOnStartup}" IsChecked="{Binding CheckUpdate, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_SingleInstance}" IsChecked="{Binding SingleInstance, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_AlwaysUseApplicationTheme}" IsChecked="{Binding AlwaysUseApplicationTheme, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_HideMenu}" IsChecked="{Binding HideMenu, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_HideButtonIcons}" IsChecked="{Binding HideButtonIcons, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_HideButtonText}" IsChecked="{Binding HideButtonText, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <Rectangle Margin="20,2" Stroke="{Binding ElementName=showInTaskbarCB, Path=Foreground}"/>
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_ClearSearchBox}" IsChecked="{Binding ClearSearchBox, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_AutoSelectTab}" IsChecked="{Binding AutoSelectTab, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_MouseDoubleClick}" IsChecked="{Binding MouseDoubleClick, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_PressKeyTwiceToLaunch}" IsChecked="{Binding PressKeyTwiceToLaunch, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_ArrowKeysSelectsTabs}" IsChecked="{Binding ArrowKeysSelectsTabs, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <Rectangle Margin="20,2" Stroke="{Binding ElementName=showInTaskbarCB, Path=Foreground}"/>
+                    <CheckBox Content="{DynamicResource OptionsDialog_CheckBox_FolderPathAsTarget}" IsChecked="{Binding FolderPathAsTarget, Mode=TwoWay}" VerticalContentAlignment="Center" Margin="0,2" Padding="5,2,0,2" />
+                    <StackPanel 
+					Orientation="Horizontal"
+					HorizontalAlignment="Left">
+                        <Label Content="{DynamicResource OptionsDialog_Label_Language}"
+                                Target="{Binding ElementName=languageComboBox}"
+                                HorizontalAlignment="Left" Margin="0,5,5,5"/>
+                        <ComboBox Grid.Row="2" Grid.Column="2" 
+								x:Name="languageComboBox"
+                                Loaded="LanguageComboBox_Loaded"
+                                SelectionChanged="LanguageComboBox_SelectionChanged"
+                                Margin="0,5,5,5">
+                        </ComboBox>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+
+        <Button Content="{DynamicResource Button_Close}" IsDefault="True" Grid.Row="1" IsCancel="true"  Click="CloseButton_Click"
+                HorizontalAlignment="Center" MinWidth="75" MinHeight="25" Margin="0,15,0,0" SnapsToDevicePixels="True" />
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿<local:MButton
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MaxLauncher"
+             x:Class="TabButton"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             ContextMenuOpening="MButton_ContextMenuOpening" 
+             Click="MButton_Click"
+             AllowDrop="True" 
+             Drop="MButton_Drop"
+             DragOver="MButton_DragOver"
+             PreviewMouseMove="MButton_PreviewMouseMove"
+             PreviewMouseDoubleClick="MButton_PreviewMouseDoubleClick"
+             Loaded="MButton_Loaded">
+    
+    <local:MButton.ContextMenu>
+        <ContextMenu>
+            <MenuItem x:Name="openfilelocationContextMenuItem" Header="{DynamicResource MButton_ContextMenu_OpenFileLocation}" Click="OpenfilelocationContextMenuItem_Click"/>
+            <Separator />
+            <MenuItem x:Name="editContextMenuItem" Header="{DynamicResource MButton_ContextMenu_Edit}" Click="EditContextMenuItem_Click"/>
+            <Separator />
+            <MenuItem x:Name="cutContextMenuItem" Header="{DynamicResource MButton_ContextMenu_Cut}" Click="CutContextMenuItem_Click"/>
+            <MenuItem x:Name="copyContextMenuItem" Header="{DynamicResource MButton_ContextMenu_Copy}" Click="CopyContextMenuItem_Click"/>
+            <MenuItem x:Name="pasteContextMenuItem" Header="{DynamicResource MButton_ContextMenu_Paste}" Click="PasteContextMenuItem_Click"/>
+            <MenuItem x:Name="deleteContextMenuItem" Header="{DynamicResource MButton_ContextMenu_Delete}" Click="DeleteContextMenuItem_Click"/>
+        </ContextMenu>
+    </local:MButton.ContextMenu>
+</local:MButton>

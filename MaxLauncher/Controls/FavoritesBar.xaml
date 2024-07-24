@@ -1,0 +1,24 @@
+﻿<ContentControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MaxLauncher"
+             x:Class="FavoritesBar" 
+             mc:Ignorable="d" 
+             d:DesignHeight="75" 
+             d:DesignWidth="640" >
+
+<UniformGrid Rows="1" >
+        <local:FavoritesButton x:Name="FB59" Key="F1" Scancode="59"/>
+        <local:FavoritesButton x:Name="FB60" Key="F2" Scancode="60"/>
+        <local:FavoritesButton x:Name="FB61" Key="F3" Scancode="61"/>
+        <local:FavoritesButton x:Name="FB62" Key="F4" Scancode="62"/>
+        <local:FavoritesButton x:Name="FB63" Key="F5" Scancode="63"/>
+        <local:FavoritesButton x:Name="FB64" Key="F6" Scancode="64"/>
+        <local:FavoritesButton x:Name="FB65" Key="F7" Scancode="65"/>
+        <local:FavoritesButton x:Name="FB66" Key="F8" Scancode="66"/>
+        <local:FavoritesButton x:Name="FB67" Key="F9" Scancode="67"/>
+        <local:FavoritesButton x:Name="FB68" Key="F10" Scancode="68"/>
+    </UniformGrid>
+</ContentControl>

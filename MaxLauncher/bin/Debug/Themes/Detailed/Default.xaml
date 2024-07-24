@@ -1,0 +1,133 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:System="clr-namespace:System;assembly=mscorlib">
+
+    <!-- *********************************************************************************** -->
+    <!-- Begin - DefaultStyles -->
+    <!-- Favorites Bar -->
+    <Color x:Key="FavoritesBar.Background.Color">Transparent</Color>
+    <Color x:Key="FavoritesBar.Border.Color">Transparent</Color>
+    <CornerRadius x:Key="FavoritesBar.CornerRadius">5,5,5,5</CornerRadius>
+    <Thickness x:Key="FavoritesBar.Border.Thickness">1,1,1,1</Thickness>
+    <Thickness x:Key="FavoritesBar.Margin">20,10,20,10</Thickness>
+    <Thickness x:Key="FavoritesBar.Padding">0,0,0,0</Thickness>
+
+    <!-- Favorites Button -->
+    <Color x:Key="FavoritesButton.Background.Color">White</Color>
+    <Thickness x:Key="FavoritesButton.Margin">3,3,3,3</Thickness>
+    <CornerRadius x:Key="FavoritesButton.CornerRadius">4,4,4,4</CornerRadius>
+    <Color x:Key="FavoritesButton.Border.Color">Black</Color>
+    <Thickness x:Key="FavoritesButton.Border.Thickness">1,1,1,1</Thickness>
+    <Thickness x:Key="FavoritesButton.Padding">1,1,1,1</Thickness>
+
+    <Color x:Key="FavoritesButton.Text.Color">Black</Color>
+    <System:Double x:Key="FavoritesButton.Text.FontSize">12</System:Double>
+    <FontFamily x:Key="FavoritesButton.Text.FontFamily">Segoe UI</FontFamily>
+    <FontWeight x:Key="FavoritesButton.Text.FontWeight">Normal</FontWeight>
+
+    <System:Double x:Key="FavoritesButton.Key.FontSize">12</System:Double>
+    <Color x:Key="FavoritesButton.Key.Color">Black</Color>
+    <FontFamily x:Key="FavoritesButton.Key.FontFamily">Segoe UI</FontFamily>
+    <FontWeight x:Key="FavoritesButton.Key.FontWeight">Normal</FontWeight>
+
+    <Color x:Key="FavoritesButton.Focused.Key.Color">Black</Color>
+    <Color x:Key="FavoritesButton.Focused.Text.Color">Black</Color>
+    <Color x:Key="FavoritesButton.Focused.Background.Color">#FFD4FFFF</Color>
+    <Color x:Key="FavoritesButton.Focused.Border.Color">Black</Color>
+    <Thickness x:Key="FavoritesButton.Focused.Border.Thickness">2,2,2,2</Thickness>
+    <Thickness x:Key="FavoritesButton.Focused.Padding">0,0,0,0</Thickness>
+
+    <Color x:Key="FavoritesButton.MouseOver.Key.Color">Black</Color>
+    <Color x:Key="FavoritesButton.MouseOver.Text.Color">Black</Color>
+    <Color x:Key="FavoritesButton.MouseOver.Background.Color">#FFD4FFFF</Color>
+    <Color x:Key="FavoritesButton.MouseOver.Border.Color">Black</Color>
+    <Thickness x:Key="FavoritesButton.MouseOver.Border.Thickness">1,1,1,1</Thickness>
+
+    <GridLength x:Key="FavoritesButton.ImageHeight">*</GridLength>
+
+    <!-- Tab Button -->
+    <Color x:Key="TabButton.Background.Color">White</Color>
+    <Thickness x:Key="TabButton.Margin">3,3,3,3</Thickness>
+    <CornerRadius x:Key="TabButton.CornerRadius">4,4,4,4</CornerRadius>
+    <Color x:Key="TabButton.Border.Color">Black</Color>
+    <Thickness x:Key="TabButton.Border.Thickness">1,1,1,1</Thickness>
+    <Thickness x:Key="TabButton.Padding">1,1,1,1</Thickness>
+
+    <Color x:Key="TabButton.Text.Color">Black</Color>
+    <System:Double x:Key="TabButton.Text.FontSize">12</System:Double>
+    <FontFamily x:Key="TabButton.Text.FontFamily">Segoe UI</FontFamily>
+    <FontWeight x:Key="TabButton.Text.FontWeight">Normal</FontWeight>
+
+    <Color x:Key="TabButton.Key.Color">Black</Color>
+    <System:Double x:Key="TabButton.Key.FontSize">12</System:Double>
+    <FontFamily x:Key="TabButton.Key.FontFamily">Segoe UI</FontFamily>
+    <FontWeight x:Key="TabButton.Key.FontWeight">Normal</FontWeight>
+
+    <Color x:Key="TabButton.Focused.Key.Color">Black</Color>
+    <Color x:Key="TabButton.Focused.Text.Color">Black</Color>
+    <Color x:Key="TabButton.Focused.Background.Color">#FFD4FFFF</Color>
+    <Color x:Key="TabButton.Focused.Border.Color">Black</Color>
+    <Thickness x:Key="TabButton.Focused.Border.Thickness">2,2,2,2</Thickness>
+    <Thickness x:Key="TabButton.Focused.Padding">0,0,0,0</Thickness>
+
+    <Color x:Key="TabButton.MouseOver.Key.Color">Black</Color>
+    <Color x:Key="TabButton.MouseOver.Text.Color">Black</Color>
+    <Color x:Key="TabButton.MouseOver.Background.Color">#FFD4FFFF</Color>
+    <Color x:Key="TabButton.MouseOver.Border.Color">Black</Color>
+    <Thickness x:Key="TabButton.MouseOver.Border.Thickness">1,1,1,1</Thickness>
+    <Thickness x:Key="TabButton.MouseOver.Padding">1,1,1,1</Thickness>
+
+    <GridLength x:Key="TabButton.ImageHeight">*</GridLength>
+
+    <!--Menu-->
+    <System:Double x:Key="Menu.FontSize">12</System:Double>
+    <FontFamily x:Key="Menu.FontFamily">Segoe UI</FontFamily>
+    <Color x:Key="Menu.Text.Color">Black</Color>
+    <Color x:Key="Menu.Background.Color">#FFFFFFFF</Color>
+    <Color x:Key="Menu.Disabled.Text.Color">#FFA9A9A9</Color>
+    <Color x:Key="Menu.Border.Color">Black</Color>
+    <FontWeight x:Key="Menu.FontWeight">Normal</FontWeight>
+
+    <!--MainTab-->
+    <Thickness x:Key="MainTab.Margin">20,20,20,20</Thickness>
+    <Thickness x:Key="MainTab.Border.Thickness">1,0,1,1</Thickness>
+    <Color x:Key="MainTab.Border.Color">Black</Color>
+    <CornerRadius x:Key="MainTab.Tab.CornerRadius">8,8,0,0</CornerRadius>
+
+    <System:Double x:Key="MainTab.Tab.Key.FontSize">12</System:Double>
+    <FontFamily x:Key="MainTab.Tab.Key.FontFamily">Segoe UI</FontFamily>
+    <FontWeight x:Key="MainTab.Tab.Key.FontWeight">Normal</FontWeight>
+
+    <System:Double x:Key="MainTab.Tab.Text.FontSize">12</System:Double>
+    <FontFamily x:Key="MainTab.Tab.Text.FontFamily">Segoe UI</FontFamily>
+    <FontWeight x:Key="MainTab.Tab.Text.FontWeight">Normal</FontWeight>
+
+    <Color x:Key="MainTab.Tab.UnSelected.Text.Color">Black</Color>
+    <Color x:Key="MainTab.Tab.UnSelected.Background.Color">White</Color>
+    <Color x:Key="MainTab.Tab.UnSelected.Key.Color">Black</Color>
+    <Thickness x:Key="MainTab.Tab.UnSelected.Border.Thickness">1,1,1,1</Thickness>
+
+
+    <Color x:Key="MainTab.Tab.MouseOver.Background.Color">#FFD4FFFF</Color>
+    <Color x:Key="MainTab.Tab.MouseOver.Text.Color">Black</Color>
+
+    <Thickness x:Key="MainTab.Tab.Selected.Border.Thickness">1,1,1,0</Thickness>
+    <Color x:Key="MainTab.Tab.Selected.Background.Color">AliceBlue</Color>
+    <Color x:Key="MainTab.Tab.Selected.Key.Color">Black</Color>
+    <Color x:Key="MainTab.Tab.Selected.Text.Color">Black</Color>
+
+    <!--MainGridSplitter-->
+    <Color x:Key="MainGridSplitter.Background.Color">#148F8B8B</Color>
+    <System:Double x:Key="MainGridSplitter.Height">5</System:Double>
+
+    <!--Window-->
+    <Color x:Key="Window.Background.Color">White</Color>
+    <Color x:Key="Window.Text.Color">Black</Color>
+    <System:Double x:Key="Window.Text.FontSize">12</System:Double>
+    <FontFamily x:Key="Window.Text.FontFamily">Segoe UI</FontFamily>
+    <FontWeight x:Key="Window.Text.FontWeight">Normal</FontWeight>
+
+    <!-- End DefaultStyles -->
+
+</ResourceDictionary>

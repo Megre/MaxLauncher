@@ -1,0 +1,35 @@
+﻿<TabControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MaxLauncher"
+             x:Class="MainTabControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             ContextMenuOpening="MainTabControl_ContextMenuOpening" 
+             SelectionChanged="MainTabControl_SelectionChanged"
+             MouseWheel="MainTabControl_MouseWheel"
+             PreviewMouseLeftButtonDown="MainTabControl_PreviewMouseLeftButtonDown"
+             PreviewMouseLeftButtonUp="MainTabControl_PreviewMouseLeftButtonUp"
+             MouseMove="MainTabControl_MouseMove"
+             MouseDoubleClick="MainTabControl_MouseDoubleClick"
+             Initialized="MainTabControl_Initialized"
+             Loaded="MainTabControl_Loaded">
+
+    <TabControl.ContextMenu>
+        <ContextMenu>
+            <MenuItem Header="{DynamicResource ResourceKey=TabControl_ContextMenu_Rename}" Click="Rename_Click" />
+            <Separator />
+            <MenuItem x:Name="addContextMenuItem" Header="{DynamicResource ResourceKey=TabControl_ContextMenu_Add}" Click="AddContextMenuItem_Click"/>
+            <MenuItem x:Name="copyContextMenuItem" Header="{DynamicResource ResourceKey=TabControl_ContextMenu_Copy}" Click="CopyContextMenuItem_Click"/>
+            <MenuItem x:Name="pasteContextMenuItem" Header="{DynamicResource ResourceKey=TabControl_ContextMenu_Paste}" Click="PasteContextMenuItem_Click"/>
+            <MenuItem x:Name="deleteContextMenuItem" Header="{DynamicResource ResourceKey=TabControl_ContextMenu_Delete}" Click="DeleteContextMenuItem_Click"/>
+            <MenuItem x:Name="clearContextMenuItem" Header="{DynamicResource ResourceKey=TabControl_ContextMenu_Clear}" Click="ClearContextMenuItem_Click"/>
+            <MenuItem x:Name="sortButtonsByContextMenuItem" Header="{DynamicResource ResourceKey=TabControl_ContextMenu_SortButtonsBy}">
+                <MenuItem x:Name="nameContextMenuItem" Header="{DynamicResource ResourceKey=TabControl_ContextMenu_Name}" Click="SortByNameContextMenuItem_Click"/>
+                <MenuItem x:Name="targetContextMenuItem" Header="{DynamicResource ResourceKey=TabControl_ContextMenu_Target}" Click="SortByTargetContextMenuItem_Click"/>
+            </MenuItem>
+        </ContextMenu>
+    </TabControl.ContextMenu>
+</TabControl>

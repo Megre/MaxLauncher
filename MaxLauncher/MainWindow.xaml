@@ -1,0 +1,139 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" 
+    x:Class="MainWindow"
+    Title="MaxLauncher"
+    Topmost="{Binding AlwaysOnTop, Mode=TwoWay}"
+    Closing="MainWindow_Closing"
+    Loaded="MainWindow_Loaded"
+    SizeChanged="MainWindow_SizeChanged"
+    LocationChanged="MainWindow_LocationChanged"
+    StateChanged="MainWindow_StateChanged"
+    PreviewKeyDown="MainWindow_PreviewKeyDown"
+    WindowState="Minimized" 
+    ResizeMode="CanResize"
+    SourceInitialized="MainWindow_SourceInitialized"
+    Initialized="MainWindow_Initialized"
+    PreviewMouseMove="MainWindow_PreviewMouseMove"
+    Closed="MainWindow_Closed"
+    Style="{DynamicResource MainWindowWindowStyle}">
+
+    <Grid x:Name="mainWindowGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="{Binding FavoritesBarGridLength, Mode=TwoWay}"/>
+            <RowDefinition x:Name="gridSplitter1Row" Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <DockPanel x:Name="mainMenuDockPanel" Grid.Row="0">
+            <Menu x:Name="mainMenu" DockPanel.Dock="Left" IsKeyboardFocusWithinChanged="mainMenu_IsKeyboardFocusWithinChanged" >
+                <Menu.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <DockPanel HorizontalAlignment="Stretch"/>
+                    </ItemsPanelTemplate>
+                </Menu.ItemsPanel>
+                <MenuItem x:Name="fileMenuItem" Header="{DynamicResource ResourceKey=MainMenu_File}" SubmenuOpened="FileMenuItem_SubmenuOpened" >
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_File_New}" Click="FileNew_Click"  />
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_File_Open}" Click="FileOpen_Click"/>
+                    <MenuItem x:Name="fileSaveAsMenuItem" Header="{DynamicResource ResourceKey=MainMenu_File_SaveAs}" Click="FileSaveAs_Click"/>
+                    <Separator/>
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_File_Import}" Click="FileImport_Click"/>
+                    <Separator/>
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_File_Exit}" Click="FileExit_Click"/>
+                </MenuItem>
+
+                <MenuItem Header="{DynamicResource ResourceKey=MainMenu_View}" SubmenuOpened="ViewMenuItem_SubmenuOpened">
+                    <MenuItem x:Name="dragAndDropModeMenuItem" Header="{DynamicResource ResourceKey=MainMenu_View_DragandDropMode}" 
+                              IsCheckable="True" 
+                              Checked="DragAndDropModeMenuItem_Checked" 
+                              Unchecked="DragAndDropModeMenuItem_Unchecked"/>
+                    <Separator/>
+                    <MenuItem x:Name="autoHideMenuItem" Header="{DynamicResource ResourceKey=MainMenu_View_AutoHide}" IsCheckable="True" 
+                              IsChecked="{Binding AutoHide, Mode=TwoWay}"
+                              Click="AutoHideMenuItem_Click"/>
+                    <MenuItem x:Name="alwaysOnTopMenuItem" Header="{DynamicResource ResourceKey=MainMenu_View_AlwaysonTop}" IsCheckable="True" 
+                              IsChecked="{Binding AlwaysOnTop, Mode=TwoWay}"
+                              Click="AlwaysOnTopMenuItem_Click"/>
+                    <MenuItem x:Name="centerOnScreenMenuItem" Header="{DynamicResource ResourceKey=MainMenu_View_CenteronScreen}" IsCheckable="True" 
+                              IsChecked="{Binding CenterOnScreen, Mode=TwoWay}"
+                              Click="CenterOnScreenMenuItem_Click"/>
+                    <MenuItem x:Name="lockGUIMenuItem" Header="{DynamicResource ResourceKey=MainMenu_View_LockGUI}" IsCheckable="True" 
+                              IsChecked="{Binding LockGUI, Mode=TwoWay}"
+                              Click="LockGUIMenuItem_Click"/>
+                    <MenuItem x:Name="hideEmptyTabButtonsMenuItem" Header="{DynamicResource ResourceKey=MainMenu_View_HideEmptyTabButtons}" IsCheckable="True" 
+                              IsChecked="{Binding HideEmptyTabButtons, Mode=TwoWay}"
+                              Click="HideEmptyTabButtonsMenuItem_Click"/>
+                    <Separator/>
+                    <MenuItem x:Name="hideTabButtonsRowMenuItem" Header="{DynamicResource ResourceKey=MainMenu_View_HideTabButtonsRow}" >
+                        <MenuItem x:Name="hideTabButtonsRow1MenuItem" Header="{DynamicResource ResourceKey=MainMenu_View_HideTabButtonsRow1}" IsCheckable="True" 
+                              IsChecked="{Binding HideTabButtonsRow1, Mode=TwoWay}" 
+                                  Click="HideTabButtonsRowMenuItem_Click"/>
+                        <MenuItem x:Name="hideTabButtonsRow2MenuItem" Header="{DynamicResource ResourceKey=MainMenu_View_HideTabButtonsRow2}" IsCheckable="True" 
+                              IsChecked="{Binding HideTabButtonsRow2, Mode=TwoWay}"
+                              Click="HideTabButtonsRowMenuItem_Click"/>
+                        <MenuItem x:Name="hideTabButtonsRow3MenuItem" Header="{DynamicResource ResourceKey=MainMenu_View_HideTabButtonsRow3}" IsCheckable="True" 
+                              IsChecked="{Binding HideTabButtonsRow3, Mode=TwoWay}"
+                              Click="HideTabButtonsRowMenuItem_Click"/>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem x:Name="dataMenuItem" Header="{DynamicResource ResourceKey=MainMenu_Data}" SubmenuOpened="DataMenuItem_SubmenuOpened">
+                    <MenuItem x:Name="dataAddMenuItem" 
+                              Header="{DynamicResource ResourceKey=MainMenu_Data_AddCurrentDataFile}"
+                              Click="DataAddMenuItem_Click"/>
+                    <MenuItem x:Name="dataOrganizeMenuItem" 
+                              Header="{DynamicResource ResourceKey=MainMenu_Data_OrganizeDataFiles}"
+                              Click="DataOrganizeMenuItem_Click"/>
+                    <Separator/>
+                </MenuItem>
+                <MenuItem Header="{DynamicResource ResourceKey=MainMenu_Tools}" SubmenuOpened="ToolsMenuItem_SubmenuOpened">
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_Tools_OpenStartMenuUser}"
+                              Click="ToolsOpenUserStartMenu_Click"/>
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_Tools_OpenStartMenuAllUsers}"
+                              Click="ToolsOpenAllUsersStartMenu_Click"/>
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_Tools_OpenControlPanel}"
+                              Click="ToolsOpenControlPanel_Click"/>
+                    <MenuItem x:Name="toolsOpenAppsFolderMenuItem" Header="{DynamicResource ResourceKey=MainMenu_Tools_OpenAppsFolder}"
+                              Click="ToolsOpenAppsFolder_Click"/>
+                    <Separator/>
+                    <MenuItem x:Name="toolsViewGroupLaunchListMenuItem" Header="{DynamicResource ResourceKey=MainMenu_Tools_ViewGroupLaunchList}"
+                              Click="ToolsViewGroupLaunchListMenuItem_Click"/>
+                </MenuItem>
+                <MenuItem x:Name="settingsMenuItem" Header="{DynamicResource ResourceKey=MainMenu_Settings}">
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_Settings_Hotkey}" Click="Settings_Hotkey_Click" />
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_Settings_Theme}" Click="Settings_Theme_Click" />
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_Settings_Options}" Click="Settings_Options_Click" />
+                </MenuItem>
+                <MenuItem Header="{DynamicResource ResourceKey=MainMenu_Help}">
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_Help_VisitWebSite}" Click="Help_VisitWebSite_Click"/>
+                    <Separator/>
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_Help_CheckForUpdatesNow}" Click="Help_CheckForUpdatesNow_Click"/>
+                    <Separator/>
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_Help_ProgramInformation}" Click="Help_ProgramInformation_Click"/>
+                    <MenuItem Header="{DynamicResource ResourceKey=MainMenu_Help_About}" Click="Help_About_Click"/>
+                </MenuItem>
+                <MenuItem HorizontalAlignment="Right" >
+                    <MenuItem.Header>
+                        <TextBox x:Name="searchTextBox" Width="140" Padding="2,0" Margin="1,1,0,0" VerticalAlignment="Center"
+                                 BorderBrush="{DynamicResource Menu.Foreground}"
+                              TextChanged="SearchTextBox_TextChanged"
+                              GotKeyboardFocus="SearchTextBox_GotKeyboardFocus"
+                              LostKeyboardFocus="SearchTextBox_LostKeyboardFocus"
+                              KeyDown="SearchTextBox_KeyDown"/>
+                    </MenuItem.Header>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+
+        <GridSplitter Grid.Row="2" x:Name="mainGridSplitter"
+                      ResizeBehavior="PreviousAndNext"
+                      HorizontalAlignment="Stretch"
+                      Height="{DynamicResource MainGridSplitter.Height}"
+                      IsTabStop="False"
+                      Background="{DynamicResource MainGridSplitter.Background}">
+        </GridSplitter>
+    </Grid>
+
+</Window>

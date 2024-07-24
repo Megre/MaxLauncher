@@ -1,0 +1,318 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--Main Menu-->
+    <sys:String x:Key="MainMenu_File">_Soubor</sys:String>
+    <sys:String x:Key="MainMenu_File_New">_Nový...</sys:String>
+    <sys:String x:Key="MainMenu_File_Open">_Otevřít...</sys:String>
+    <sys:String x:Key="MainMenu_File_SaveAs">_Uložit jako...</sys:String>
+    <sys:String x:Key="MainMenu_File_Import">_Importovat...</sys:String>
+    <sys:String x:Key="MainMenu_File_Exit">_Konec</sys:String>
+
+    <sys:String x:Key="MainMenu_View">_Vzhled</sys:String>
+    <sys:String x:Key="MainMenu_View_DragandDropMode">_Režim táhni a pusť</sys:String>
+    <sys:String x:Key="MainMenu_View_AutoHide">_Automaticky skrývat</sys:String>
+    <sys:String x:Key="MainMenu_View_AlwaysonTop">_Stále na vrchu</sys:String>
+    <sys:String x:Key="MainMenu_View_CenteronScreen">_Centrovat na obrazovce</sys:String>
+    <sys:String x:Key="MainMenu_View_LockGUI">_Lock GUI</sys:String>
+    <sys:String x:Key="MainMenu_View_HideEmptyTabButtons">_Skrýt prázdná tlačítka</sys:String>
+    <sys:String x:Key="MainMenu_View_HideTabButtonsRow">Skrýt řádek tlačítek _:</sys:String>
+    <sys:String x:Key="MainMenu_View_HideTabButtonsRow1">Řádek _1</sys:String>
+    <sys:String x:Key="MainMenu_View_HideTabButtonsRow2">Řádek _2</sys:String>
+    <sys:String x:Key="MainMenu_View_HideTabButtonsRow3">Řádek _3</sys:String>
+  
+    <sys:String x:Key="MainMenu_Data">_Data</sys:String>
+    <sys:String x:Key="MainMenu_Data_AddCurrentDataFile">_Přidat běžný datový soubor</sys:String>
+    <sys:String x:Key="MainMenu_Data_OrganizeDataFiles">_Organizovat datové Soubory...</sys:String>
+
+    <sys:String x:Key="MainMenu_Tools">_Nástroje</sys:String>
+    <sys:String x:Key="MainMenu_Tools_OpenStartMenuUser">Otevřít nabídku Start (_Uživatel)</sys:String>
+    <sys:String x:Key="MainMenu_Tools_OpenStartMenuAllUsers">Otevřít nabídku Start (_Všichni uživatelé)</sys:String>
+    <sys:String x:Key="MainMenu_Tools_OpenControlPanel">Open Control _Panel</sys:String>
+    <sys:String x:Key="MainMenu_Tools_OpenAppsFolder">Open Apps_Folder</sys:String>																			   
+    <sys:String x:Key="MainMenu_Tools_ViewGroupLaunchList">Vzhled _Seznamu skupinového spouštěče</sys:String>
+  
+    <sys:String x:Key="MainMenu_Settings">_Pomůcky</sys:String>
+    <sys:String x:Key="MainMenu_Settings_Hotkey">_Klávesová zkratka...</sys:String>
+    <sys:String x:Key="MainMenu_Settings_Theme">_Téma...</sys:String>
+    <sys:String x:Key="MainMenu_Settings_Options">_Možnosti...</sys:String>
+  
+    <sys:String x:Key="MainMenu_Help">_Informace o programu</sys:String>
+    <sys:String x:Key="MainMenu_Help_VisitWebSite">_Přejít na web</sys:String>
+    <sys:String x:Key="MainMenu_Help_CheckForUpdatesNow">Check for _updates now</sys:String>
+    <sys:String x:Key="MainMenu_Help_ProgramInformation">_Umístění dat programu</sys:String>
+    <sys:String x:Key="MainMenu_Help_About">_Licence</sys:String>
+    <sys:String x:Key="SearchBox">Search (Ctrl+F)</sys:String>
+
+    <!--Start Dialog-->
+    <sys:String x:Key="StartDialog_Title">Start</sys:String>
+    <sys:String x:Key="StartDialog_NewFile">_Nový Soubor</sys:String>
+    <sys:String x:Key="StartDialog_OpenFile">_Otevřít Soubor</sys:String>
+
+    <!--TabControl ContextMenu-->
+    <sys:String x:Key="TabControl_ContextMenu_Rename">_Změnit název</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Add">_Přidat</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Copy">_Kopírovat</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Paste">_Vložit</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Delete">_Smazat</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Clear">Cl_ear</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_SortButtonsBy">_Třídit tlačítka podle...</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Name">_Název</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Target">_Cíl</sys:String>
+
+    <!--Options Dialog-->
+    <sys:String x:Key="OptionsDialog_Title">Možnosti</sys:String>
+    <sys:String x:Key="OptionsDialog_GroupBox_General">_Obecné</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_MinimizeOnClose">_Minimalizovat při zavírání</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_ShowInTaskbar">_Ukázat v panelu</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_StartMinimized">_Start s minimalizovaným</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_AutoSelectTab">_Automatická volba tlačítka</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_HideMenu">_Ukrýt nabídku (stisknout Alt k zobrazení)</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_OpenLastFileUsed">Otevřít naposledy použitý _soubor</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_CheckForUpdateOnStartup">_Zjišťovat aktualizace při startu</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_SingleInstance">Jedna _instance</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_MouseDoubleClick">Spuštění _dvojklikem myši</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_PressKeyTwiceToLaunch">Spuštění dvojitým stiskem klávesy</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_AlwaysUseApplicationTheme">Always use application t_heme</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_ArrowKeysSelectsTabs">Use _arrow keys to select tabs</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_HideButtonIcons">Hide Button Ic_ons</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_FolderPathAsTarget">Use folder path as Tar_get</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_ClearSearchBox">Clear _Search when restoring window</sys:String>
+    <sys:String x:Key="OptionsDialog_Label_Language">_Jazyk:</sys:String>
+
+    <!--Hotkey Dialog-->
+    <sys:String x:Key="HotkeyDialog_Title">Zkratka</sys:String>
+    <sys:String x:Key="HotkeyDialog_GroupBox_Hotkey">Zkratka</sys:String>
+    <sys:String x:Key="HotkeyDialog_Label_Key">Klávesa:</sys:String>
+    <sys:String x:Key="HotkeyDialog_Label_Status">Stav:</sys:String>
+    <sys:String x:Key="HotkeyDialog_Label_ActiveTab">Aktivní _tlačítko:</sys:String>
+    <sys:String x:Key="HotkeyDialog_String_LastUsed">Naposledy použíté:</sys:String>
+
+    <!--DataFiles Dialog-->
+    <sys:String x:Key="DataFilesDialog_Title">Organizovat datové soubory</sys:String>
+    <sys:String x:Key="DataFilesDialog_Label_DataFiles">Datové soubory:</sys:String>
+    <sys:String x:Key="DataFilesDialog_ListView_Header_MenuName">Název nabídky</sys:String>
+    <sys:String x:Key="DataFilesDialog_ListView_Header_Filename">Název souboru</sys:String>
+    <sys:String x:Key="DataFilesDialog_Button_MoveUp">Přesunout _nahoru</sys:String>
+    <sys:String x:Key="DataFilesDialog_Button_MoveDown">Přesunout _dolů</sys:String>
+    <sys:String x:Key="DataFilesDialog_Button_Remove">_Odstranit</sys:String>
+    <sys:String x:Key="DataFilesDialog_Button_Sort">_Seřadit</sys:String>
+
+    <!--MaxLauncher Button ContextMenu-->
+    <sys:String x:Key="MButton_ContextMenu_OpenFileLocation">Open file _location</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Edit">_Edit</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Cut">Cu_t</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Copy">_Copy</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Paste">_Paste</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Delete">_Delete</sys:String>
+
+    <!--Property Editor Dialog-->
+    <sys:String x:Key="PropertyEditorDialog_Title">Editor klientských témat</sys:String>
+
+    <!--Input Dialog-->
+    <sys:String x:Key="InputDialog_Title_RenameTab">Rename Tab</sys:String>
+    <sys:String x:Key="InputDialog_Label_Tabname">Tab _name:</sys:String>
+
+    <!--Program Information Dialog-->
+    <sys:String x:Key="ProgramInformationDialog_Title">Umístění dat</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_Version">Verze:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_ProgramDirectory">Složka programu:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_ThemesDirectory">Složka témat:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_LanguageDirectory">Složka jazyků:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_ShortcutsDirectory">Shortcuts Directory:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_AppCfg">app.cfg:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_FavoritesCfg">favorites.cfg:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_IconCache">iconcache.mldb:</sys:String>
+
+    <!--Theme Dialog-->
+    <sys:String x:Key="ThemeDialog_Title">Téma</sys:String>
+    <sys:String x:Key="ThemeDialog_Label_SelectTheme">Volba tématu:</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Add">_Přidat</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Delete">_Zrušit</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Copy">K_opírovat</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Customize">U_pravit</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Reset">_Resetovat</sys:String>
+
+    <!--About Dialog-->
+    <sys:String x:Key="AboutDialog_Title">O MaxLauncheru</sys:String>
+
+    <!--EditButton Dialog-->
+    <sys:String x:Key="EditButtonDialog_Title">Tlačítko Edit</sys:String>
+    <sys:String x:Key="EditButtonDialog_Tab_Properties">Vlastnosti</sys:String>
+    <sys:String x:Key="EditButtonDialog_Tab_Window">Okno</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Name">_Název:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Target">_Cíl:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Arguments">_Argumenty:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_StartIn">_Spustit v:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Description">_Description:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Run">_Spustit:</sys:String>
+    <sys:String x:Key="EditButtonDialog_CheckBox_RunAsAdministrator">Spustit jako s_právce:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_WindowTitle">_Název okna:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_WindowProcessName">Název _procesu okna:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_GroupID">_Skupinový ID:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Button_ViewList">Vzhled _Seznamu</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_RunComboBox_Normal">Normální</sys:String>
+    <sys:String x:Key="EditButtonDialog_RunComboBox_Hidden">Skrytý</sys:String>
+    <sys:String x:Key="EditButtonDialog_RunComboBox_Minimized">Minimalizovaný</sys:String>
+    <sys:String x:Key="EditButtonDialog_RunComboBox_Maximized">Maximalizovaný</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_IconComboBox_Select">Zvolit...</sys:String>
+    <sys:String x:Key="EditButtonDialog_IconComboBox_DefaultIcon">Výchozí ikona</sys:String>
+    <sys:String x:Key="EditButtonDialog_IconComboBox_BrowseIcon">Procházet ikony...</sys:String>
+    <sys:String x:Key="EditButtonDialog_IconComboBox_BrowseImage">Procházet obrázky...</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_TargetComboBox_Browse">Procházet...</sys:String>
+    <sys:String x:Key="EditButtonDialog_TargetComboBox_File">Soubor...</sys:String>
+    <sys:String x:Key="EditButtonDialog_TargetComboBox_Folder">Složka...</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_Button_BrowseFolder">Procházet _složku...</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_GroupBox_LocationSize">Umístění/Velikost</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_LocationSizePresets">Umístění/_Přednastavení velikosti:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_LocationSizePresetsComment">Requires Run=Normal and Window Title=&quot;a title&quot;.</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_GroupBox_Custom">Klientské</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_ReferenceWindow">_Referenční okénko:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Left">_Levý</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Top">_Horní</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Width">_Šířka</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Height">_Výška</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Normal">Normální</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Left">Levý</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Right">Pravý</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Top">Horní</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Bottom">Spodní</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_TopLeft">Vlevo nahoře</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_BottomLeft">Vlevo dole</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_TopRight">Vpravo nahoře</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_BottomRight">Vpravo dole</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Custom">Klientské</sys:String>
+
+    <!--GroupLaunch Dialog-->
+    <sys:String x:Key="GroupLaunchDialog_Title">Group Launch List</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_Label_List">Group launch list</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_GroupLaunchID">Group Launch ID</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_TabNumber">Tab Number</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_TabName">Tab Name</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_ButtonKey">Button Key</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_ButtonName">Button Text</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_Target">Target</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_Arguments">_Arguments</sys:String>
+
+    <!--MessageBox-->
+    <sys:String x:Key="MessageBox_Expander_Details">Detaily</sys:String>
+    <sys:String x:Key="MessageBox_Title_LoadingConfiguration">Načtení konfigurace</sys:String>
+    <sys:String x:Key="MessageBox_Message_OKtoexit">Ukončit stiskem OK.</sys:String>
+    <sys:String x:Key="MessageBox_Title_InitializingFavoritesBar">Inicalizace pásu oblíbených</sys:String>
+    <sys:String x:Key="MessageBox_Message_OKtocontinue">Pro pokračování stisknout OK.</sys:String>
+    <sys:String x:Key="MessageBox_Title_InitializingIconCacheDB">Inicializace IconCacheDB</sys:String>
+
+    <!--Global-->
+    <sys:String x:Key="Button_Yes">_Ano</sys:String>
+    <sys:String x:Key="Button_No">_Ne</sys:String>
+    <sys:String x:Key="Button_Close">_Zavřít</sys:String>
+    <sys:String x:Key="Button_OK">_OK</sys:String>
+    <sys:String x:Key="Button_Cancel">Z_rušit</sys:String>
+
+    <sys:String x:Key="String_Theme">Téma</sys:String>
+    <sys:String x:Key="String_Language">Jazyk</sys:String>
+    <sys:String x:Key="String_NewFile">Nový soubor</sys:String>
+    <sys:String x:Key="String_OpenFile">Otevřít soubor</sys:String>
+    <sys:String x:Key="String_SaveFileAs">Uložit soubor jako</sys:String>
+    <sys:String x:Key="String_Hotkey">Zkratka</sys:String>
+    <sys:String x:Key="String_HotkeyRegistrationFailed">Registrace zkratky {0} selhala.</sys:String>
+    <sys:String x:Key="String_Update">Aktualizovat</sys:String>
+    <sys:String x:Key="String_IsUpToDate">is up to date.</sys:String>
+    <sys:String x:Key="String_NewVersionAvailable">Nová verze je k disposici pro stahování.</sys:String>
+    <sys:String x:Key="String_VisitWebsite">Přejete si ji stáhnot z webu?</sys:String>
+    <sys:String x:Key="String_SaveAs">Uložit jako</sys:String>
+    <sys:String x:Key="String_ImportFile">Importovat soubor</sys:String>
+    <sys:String x:Key="String_ErrorLoadingDataFile">Chyba při zavádění datového souboru</sys:String>
+    <sys:String x:Key="String_DataFiles">Datové soubory</sys:String>
+
+    <sys:String x:Key="String_ErrorOpeningFile">Chyba při otevírání souboru {0}.</sys:String>
+    <sys:String x:Key="String_ErrorLoadingFile">Chyba při zavádění souboru {0}.</sys:String>
+    <sys:String x:Key="String_ErrorSavingFile">Chyba při ukládání souboru {0}.</sys:String>
+    <sys:String x:Key="String_SavingFavoritesBarData">Ukládání dat Favorites Bar</sys:String>
+    <sys:String x:Key="String_SavingData">Ukládání dat</sys:String>
+    <sys:String x:Key="String_SavingIconCacheDatabase">Ukládní databáze Icon Cache</sys:String>
+    <sys:String x:Key="String_SavingApplicationConfiguration">Ukládání konfigurace pro aplikaci</sys:String>
+
+    <sys:String x:Key="String_ButtonDragAndDrop">Táhnout a pustit tlačítko</sys:String>
+    <sys:String x:Key="String_OpenFileLocation">Otevřít umístění souboru File Location</sys:String>
+    <sys:String x:Key="String_UnableToOpenFolder">Nelze otevřít složku {0}.</sys:String>
+    <sys:String x:Key="String_Edit">Editovat</sys:String>
+    <sys:String x:Key="String_Cut">Vyjmout</sys:String>
+    <sys:String x:Key="String_Copy">Vložit</sys:String>
+    <sys:String x:Key="String_Replace">Nahradit</sys:String>
+    <sys:String x:Key="String_ReplaceButton">Nahradit '( {0} ) {1}' tlačítko?</sys:String>
+    <sys:String x:Key="String_Paste">Vložit</sys:String>
+    <sys:String x:Key="String_Delete">Zrušit</sys:String>
+    <sys:String x:Key="String_DeleteButton">Zrušit '( {0} ) {1}' tlačítko?</sys:String>
+    <sys:String x:Key="String_Sort">Seřadit</sys:String>
+    <sys:String x:Key="String_SortButtons">Seřazení tab tlačítek nelze vzít zpět. Pokračovat?</sys:String>
+    <sys:String x:Key="String_FileExistsReplace">File {0} exists. Replace?</sys:String>
+    <sys:String x:Key="String_FileReplaceError">Error replacing file {0}.</sys:String>
+
+    <sys:String x:Key="String_TabDragandDrop">Uchopit a pustit tlačítko</sys:String>
+    <sys:String x:Key="String_ReplaceTab">"Nahradit tlačítko ({0}) {1}?"</sys:String>
+    <sys:String x:Key="String_DeleteTabWarning">Zrušení tlačítka nelze vzít zpět. Jsete si jisti že chcete zrušit "{0}"?</sys:String>
+    <sys:String x:Key="String_DeleteTab">Zrušení tlačítka</sys:String>
+    <sys:String x:Key="String_ClearTabWarning">Clearing a tab cannot be undone. Are you sure you want to clear tab "{0}"?</sys:String>
+    <sys:String x:Key="String_ClearTab">Clear Tab</sys:String>
+    <sys:String x:Key="String_ErrorOpening">Chyba při otevírání {0}</sys:String>
+    <sys:String x:Key="String_Run">Spustit</sys:String>
+    <sys:String x:Key="String_ErrorOpeningFavoritesBarConfig">Chyba při otevírání konfiguračního souboru FavoritesBar {0}.</sys:String>
+    <sys:String x:Key="String_ErrorSavingFavoritesBarConfig">Chyba při ukládání konfiguračního souboru FavoritesBar {0}.</sys:String>
+
+    <sys:String x:Key="String_ErrorConvertingFile">Chyba při převodu {0} na {1}</sys:String>
+    <sys:String x:Key="String_ErrorSavingIconCache">Chyba při ukládání icon cache {0}.</sys:String>
+    <sys:String x:Key="String_ErrorOpeningIconCache">Chyba při otevírání icon cache {0}.</sys:String>
+
+    <sys:String x:Key="String_Version">Verze</sys:String>
+
+    <sys:String x:Key="String_SelectWorkingDirectory">Výběr pracovní složky:</sys:String>
+    <sys:String x:Key="String_EmptyTarget">Cíl nesmí být nevyplněný!</sys:String>
+    <sys:String x:Key="String_EditButton">Edovat tlačítko</sys:String>
+    <sys:String x:Key="String_CustomWindowSize">Velikost klientova okna</sys:String>
+    <sys:String x:Key="String_LeftMustBeZeroOrGreater">Levý okraj musí být větší nebo roven 0.</sys:String>
+    <sys:String x:Key="String_TopMustBeZeroOrGreater">"Horní okraj musí být větší nebo roven 0."</sys:String>
+    <sys:String x:Key="String_WidthMustBeZeroOrGreater">"Šířka musí být větší nebo rovna 0."</sys:String>
+    <sys:String x:Key="String_HeightMustBeZeroOrGreater">"Výška musí být větší nebo rovna 0."</sys:String>
+    <sys:String x:Key="String_SelectFile">Zvolit soubor</sys:String>
+    <sys:String x:Key="String_SelectFolder">Zvolit složku:</sys:String>
+    <sys:String x:Key="String_SelectImageFile">Zvolit soubor s obrázkem</sys:String>
+    <sys:String x:Key="String_Available">K disposici</sys:String>
+    <sys:String x:Key="String_Unavailable">Není k disposici</sys:String>
+
+    <sys:String x:Key="String_InvalidValueFor">Neplatná hodnota pro '{0}'.</sys:String>
+    <sys:String x:Key="String_CustomTheme">Klientské téma</sys:String>
+
+    <sys:String x:Key="String_ErrorApplyingTheme">Chyba při aplikaci tématu '{0}'.</sys:String>
+    <sys:String x:Key="String_AddTheme">Přidat téma</sys:String>
+    <sys:String x:Key="String_DeleteTheme">Vymazat téma</sys:String>
+    <sys:String x:Key="String_DeleteSelectedTheme">Vymazat téma {0} ?</sys:String>
+    <sys:String x:Key="String_CopyTheme">Kopírovat téma</sys:String>
+    <sys:String x:Key="String_ThemeName">Název tématu:</sys:String>
+    <sys:String x:Key="String_PleaseEnterAName">Prosím vložte název.</sys:String>
+    <sys:String x:Key="String_DirExistsChooseAnother">Složka '{0}' existuje. Prosím zvolte jiný název.</sys:String>
+    <sys:String x:Key="String_ResetTheme">Resetovat téma</sys:String>
+    <sys:String x:Key="String_UseDefaultsForThisTheme">Použít implicitní údaje pro toto téma?</sys:String>
+    <sys:String x:Key="String_UnableToResetTheme">Téma nelze resetovat.</sys:String>
+    <sys:String x:Key="String_ErrorCreatingCustomFile">Chyba při vytváření klientského souboru.</sys:String>
+    <sys:String x:Key="String_ErrorSavingChanges">Chyba při ukládání změn.</sys:String>
+
+    <sys:String x:Key="String_ErrorSettingLanguage">Error setting language '{0}'.</sys:String>
+
+    <sys:String x:Key="String_SystemTrayMenuExit">E&amp;xit</sys:String>
+    <sys:String x:Key="String_SystemTrayMenuShow">&amp;Show {0}</sys:String>
+
+    <sys:String x:Key="String_WindowCannotBeNothing">Při registraci zkratky nemůže být okénko prázdné.</sys:String>
+
+    <sys:String x:Key="String_UpdateCheckFailed">Update check failed.</sys:String>
+
+</ResourceDictionary>
+

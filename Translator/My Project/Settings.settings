@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ORIGINAL_FILE" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TRANSLATION_FILE" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="HIDE_TRANSLATED_TEXT" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AppWebsite" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://maxlauncher.sourceforge.io</Value>
+    </Setting>
+    <Setting Name="EMAIL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">madproton@gmail.com</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

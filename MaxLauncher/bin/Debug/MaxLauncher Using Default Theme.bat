@@ -1,0 +1,1 @@
+start MaxLauncher.exe -DefaultTheme

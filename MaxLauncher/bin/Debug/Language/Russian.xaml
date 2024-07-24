@@ -1,0 +1,317 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--Main Menu-->
+    <sys:String x:Key="MainMenu_File">_Файл</sys:String>
+    <sys:String x:Key="MainMenu_File_New">Соз_дать...</sys:String>
+    <sys:String x:Key="MainMenu_File_Open">_Открыть...</sys:String>
+    <sys:String x:Key="MainMenu_File_SaveAs">_Сохранить как...</sys:String>
+    <sys:String x:Key="MainMenu_File_Import">_Импорт...</sys:String>
+    <sys:String x:Key="MainMenu_File_Exit">_Выход</sys:String>
+
+    <sys:String x:Key="MainMenu_View">_Просмотр</sys:String>
+    <sys:String x:Key="MainMenu_View_DragandDropMode">_Режим перетягивания</sys:String>
+    <sys:String x:Key="MainMenu_View_AutoHide">Авто скрытие</sys:String>
+    <sys:String x:Key="MainMenu_View_AlwaysonTop">Всегда сверху</sys:String>
+    <sys:String x:Key="MainMenu_View_CenteronScreen">В центре экрана</sys:String>
+    <sys:String x:Key="MainMenu_View_LockGUI">_Блокировать UI</sys:String>
+    <sys:String x:Key="MainMenu_View_HideEmptyTabButtons">Скрыть пустые кнопки</sys:String>
+    <sys:String x:Key="MainMenu_View_HideTabButtonsRow">Скрыть ряды кнопок</sys:String>
+    <sys:String x:Key="MainMenu_View_HideTabButtonsRow1">Ряд 1</sys:String>
+    <sys:String x:Key="MainMenu_View_HideTabButtonsRow2">Ряд 2</sys:String>
+    <sys:String x:Key="MainMenu_View_HideTabButtonsRow3">Ряд 3</sys:String>
+
+    <sys:String x:Key="MainMenu_Data">_Профили</sys:String>
+    <sys:String x:Key="MainMenu_Data_AddCurrentDataFile">Дублировать текущий</sys:String>
+    <sys:String x:Key="MainMenu_Data_OrganizeDataFiles">Упорядочить...</sys:String>
+
+    <sys:String x:Key="MainMenu_Tools">_Инструменты</sys:String>
+    <sys:String x:Key="MainMenu_Tools_OpenStartMenuUser">Открыть свое меню Пуск</sys:String>
+    <sys:String x:Key="MainMenu_Tools_OpenStartMenuAllUsers">Открыть общее меню Пуск</sys:String>
+    <sys:String x:Key="MainMenu_Tools_OpenControlPanel">Открыть Панель управления</sys:String>
+    <sys:String x:Key="MainMenu_Tools_OpenAppsFolder">Открыть папку Applications</sys:String>
+    <sys:String x:Key="MainMenu_Tools_ViewGroupLaunchList">Список групп запуска</sys:String>
+
+    <sys:String x:Key="MainMenu_Settings">_Настройки</sys:String>
+    <sys:String x:Key="MainMenu_Settings_Hotkey">Горячие клавиши</sys:String>
+    <sys:String x:Key="MainMenu_Settings_Theme">_Оформление...</sys:String>
+    <sys:String x:Key="MainMenu_Settings_Options">_Настройки...</sys:String>
+
+    <sys:String x:Key="MainMenu_Help">_Помощь</sys:String>
+    <sys:String x:Key="MainMenu_Help_VisitWebSite">Домашняя _страница</sys:String>
+    <sys:String x:Key="MainMenu_Help_CheckForUpdatesNow">Проверить _обновления</sys:String>
+    <sys:String x:Key="MainMenu_Help_ProgramInformation">Информация</sys:String>
+    <sys:String x:Key="MainMenu_Help_About">О программе</sys:String>
+    <sys:String x:Key="SearchBox">Search (Ctrl+F)</sys:String>
+
+    <!--Start Dialog-->
+    <sys:String x:Key="StartDialog_Title">Старт</sys:String>
+    <sys:String x:Key="StartDialog_NewFile">_Новый файл</sys:String>
+    <sys:String x:Key="StartDialog_OpenFile">_Открыть файл</sys:String>
+
+    <!--TabControl ContextMenu-->
+    <sys:String x:Key="TabControl_ContextMenu_Rename">_Переименовать</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Add">_Добавить</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Copy">_Копировать</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Paste">_Вставить</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Delete">_Удалить</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Clear">О_чистить</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_SortButtonsBy">_Сортировать по...</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Name">_Имя</sys:String>
+    <sys:String x:Key="TabControl_ContextMenu_Target">_Цель</sys:String>
+
+    <!--Options Dialog-->
+    <sys:String x:Key="OptionsDialog_Title">_Настройки</sys:String>
+    <sys:String x:Key="OptionsDialog_GroupBox_General">Главное</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_MinimizeOnClose">Сворачивать при закрытии</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_ShowInTaskbar">Кнопка на панели задач</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_StartMinimized">Запускать свернутой</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_AutoSelectTab">Авто выбор вкладки</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_HideMenu">Скрыть меню (Alt для показа)</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_OpenLastFileUsed">Открывать последнюю</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_CheckForUpdateOnStartup">Проверять обновления при старте</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_SingleInstance">Одна копия программы</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_MouseDoubleClick">Двойной ЛКМ для запуска</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_PressKeyTwiceToLaunch">Двойной ключ для запуска</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_AlwaysUseApplicationTheme">Всегда использовать тему</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_ArrowKeysSelectsTabs">_Стрелки для выбора вкладок</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_HideButtonIcons">Скрыть иконки кнопок</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_FolderPathAsTarget">Путь к папке как цель</sys:String>
+    <sys:String x:Key="OptionsDialog_CheckBox_ClearSearchBox">Clear _Search when restoring window</sys:String>
+    <sys:String x:Key="OptionsDialog_Label_Language">Язык интерфейса:</sys:String>
+
+    <!--Hotkey Dialog-->
+    <sys:String x:Key="HotkeyDialog_Title">Горячие клавиши</sys:String>
+    <sys:String x:Key="HotkeyDialog_GroupBox_Hotkey">Горячие клавиши</sys:String>
+    <sys:String x:Key="HotkeyDialog_Label_Key">Сочетание:</sys:String>
+    <sys:String x:Key="HotkeyDialog_Label_Status">Статус:</sys:String>
+    <sys:String x:Key="HotkeyDialog_Label_ActiveTab">Активировать:</sys:String>
+    <sys:String x:Key="HotkeyDialog_String_LastUsed">Последнюю:</sys:String>
+
+    <!--DataFiles Dialog-->
+    <sys:String x:Key="DataFilesDialog_Title">Упорядочить файлы данных</sys:String>
+    <sys:String x:Key="DataFilesDialog_Label_DataFiles">Файлы данных:</sys:String>
+    <sys:String x:Key="DataFilesDialog_ListView_Header_MenuName">Имя меню</sys:String>
+    <sys:String x:Key="DataFilesDialog_ListView_Header_Filename">Имя файла</sys:String>
+    <sys:String x:Key="DataFilesDialog_Button_MoveUp">Выше</sys:String>
+    <sys:String x:Key="DataFilesDialog_Button_MoveDown">Ниже</sys:String>
+    <sys:String x:Key="DataFilesDialog_Button_Remove">Удалить</sys:String>
+    <sys:String x:Key="DataFilesDialog_Button_Sort">Сотрировка</sys:String>
+
+    <!--MaxLauncher Button ContextMenu-->
+    <sys:String x:Key="MButton_ContextMenu_OpenFileLocation">Открыть папку файла</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Edit">Редактировать</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Cut">Вырезать</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Copy">Копировать</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Paste">Вставить</sys:String>
+    <sys:String x:Key="MButton_ContextMenu_Delete">Удалить</sys:String>
+
+    <!--Property Editor Dialog-->
+    <sys:String x:Key="PropertyEditorDialog_Title">Редактировать тему</sys:String>
+
+    <!--Input Dialog-->
+    <sys:String x:Key="InputDialog_Title_RenameTab">Переименовать вкладку</sys:String>
+    <sys:String x:Key="InputDialog_Label_Tabname">Имя вкладки:</sys:String>
+
+    <!--Program Information Dialog-->
+    <sys:String x:Key="ProgramInformationDialog_Title">Информация</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_Version">Версия:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_ProgramDirectory">Папка программы:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_ThemesDirectory">Папка темы:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_LanguageDirectory">Папка языкового файла:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_ShortcutsDirectory">Папка ярлыков:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_AppCfg">app.cfg:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_FavoritesCfg">favorites.cfg:</sys:String>
+    <sys:String x:Key="ProgramInformationDialog_Label_IconCache">iconcache.mldb:</sys:String>
+
+    <!--Theme Dialog-->
+    <sys:String x:Key="ThemeDialog_Title">Темы</sys:String>
+    <sys:String x:Key="ThemeDialog_Label_SelectTheme">Выбрать тему:</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Add">Добавить</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Delete">Удалить</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Copy">Копировать</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Customize">Настроить</sys:String>
+    <sys:String x:Key="ThemeDialog_Button_Reset">Сбросить</sys:String>
+
+    <!--About Dialog-->
+    <sys:String x:Key="AboutDialog_Title">О MaxLauncher</sys:String>
+
+    <!--EditButton Dialog-->
+    <sys:String x:Key="EditButtonDialog_Title">Редактирование кнопки</sys:String>
+    <sys:String x:Key="EditButtonDialog_Tab_Properties">Свойства</sys:String>
+    <sys:String x:Key="EditButtonDialog_Tab_Window">Окно</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Name">Имя:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Target">Цель:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Arguments">Аргументы:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_StartIn">Рабочая:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Description">_Описание:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Run">Запуск:</sys:String>
+    <sys:String x:Key="EditButtonDialog_CheckBox_RunAsAdministrator">Запускать от администратора:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_WindowTitle">Заголовок окна:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_WindowProcessName">Имя окна прцесса:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_GroupID">ID группы:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Button_ViewList">Просмотр списка</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_RunComboBox_Normal">Обычно</sys:String>
+    <sys:String x:Key="EditButtonDialog_RunComboBox_Hidden">Скрытым</sys:String>
+    <sys:String x:Key="EditButtonDialog_RunComboBox_Minimized">Свернутым</sys:String>
+    <sys:String x:Key="EditButtonDialog_RunComboBox_Maximized">Развернутым</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_IconComboBox_Select">Выбрать...</sys:String>
+    <sys:String x:Key="EditButtonDialog_IconComboBox_DefaultIcon">Иконка по умолчанию</sys:String>
+    <sys:String x:Key="EditButtonDialog_IconComboBox_BrowseIcon">Указать иконку...</sys:String>
+    <sys:String x:Key="EditButtonDialog_IconComboBox_BrowseImage">Изображение...</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_TargetComboBox_Browse">Выбрать...</sys:String>
+    <sys:String x:Key="EditButtonDialog_TargetComboBox_File">Файл...</sys:String>
+    <sys:String x:Key="EditButtonDialog_TargetComboBox_Folder">Папка...</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_Button_BrowseFolder">Найти папку...</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_GroupBox_LocationSize">Позиция / размер</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_LocationSizePresets">Пресеты позиции/размера:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_LocationSizePresetsComment">Требует запуск = Обычно + не пустой Заголовок окна.</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_GroupBox_Custom">Изменить</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_ReferenceWindow">Аналогично окну:</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Left">Лево</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Top">Верх</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Width">Ширина</sys:String>
+    <sys:String x:Key="EditButtonDialog_Label_Height">Высота</sys:String>
+
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Normal">Обычный</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Left">Лево</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Right">Право</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Top">Верх</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Bottom">Низ</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_TopLeft">Лево верх</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_BottomLeft">Лево низ</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_TopRight">Право верх</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_BottomRight">Право низ</sys:String>
+    <sys:String x:Key="EditButtonDialog_SizeComboBox_Custom">Изменить</sys:String>
+
+    <!--GroupLaunch Dialog-->
+    <sys:String x:Key="GroupLaunchDialog_Title">Список группы запуска</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_Label_List">Группы запуска (заполните ID группы в настройках кнопок)</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_GroupLaunchID">ID группы запуска</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_TabNumber">Номер таба</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_TabName">Имя таба</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_ButtonKey">Ключ кнопки</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_ButtonName">Текст кнопки</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_Target">Цель</sys:String>
+    <sys:String x:Key="GroupLaunchDialog_ListView_Header_Arguments">Аргументы</sys:String>
+
+    <!--MessageBox-->
+    <sys:String x:Key="MessageBox_Expander_Details">Детали</sys:String>
+    <sys:String x:Key="MessageBox_Title_LoadingConfiguration">Загрузить конфигурацию</sys:String>
+    <sys:String x:Key="MessageBox_Message_OKtoexit">Надмите OK для выхода.</sys:String>
+    <sys:String x:Key="MessageBox_Title_InitializingFavoritesBar">Тспользовать панель избранного</sys:String>
+    <sys:String x:Key="MessageBox_Message_OKtocontinue">Нажмите OK для продолжения.</sys:String>
+    <sys:String x:Key="MessageBox_Title_InitializingIconCacheDB">Использовать IconCacheDB</sys:String>
+
+    <!--Global-->
+    <sys:String x:Key="Button_Yes">Да</sys:String>
+    <sys:String x:Key="Button_No">Нет</sys:String>
+    <sys:String x:Key="Button_Close">Закрыть</sys:String>
+    <sys:String x:Key="Button_OK">_OK</sys:String>
+    <sys:String x:Key="Button_Cancel">Отмена</sys:String>
+
+    <sys:String x:Key="String_Theme">Тема</sys:String>
+    <sys:String x:Key="String_Language">Язык</sys:String>
+    <sys:String x:Key="String_NewFile">Новый файл</sys:String>
+    <sys:String x:Key="String_OpenFile">Открыть файл</sys:String>
+    <sys:String x:Key="String_SaveFileAs">Сохранить файл как</sys:String>
+    <sys:String x:Key="String_Hotkey">Горячие клавиши</sys:String>
+    <sys:String x:Key="String_HotkeyRegistrationFailed">Комбинация {0} не зарегистрирована.</sys:String>
+    <sys:String x:Key="String_Update">Обновить</sys:String>
+    <sys:String x:Key="String_IsUpToDate">актуальна.</sys:String>
+    <sys:String x:Key="String_NewVersionAvailable">Новая версия доступна для скачивания.</sys:String>
+    <sys:String x:Key="String_VisitWebsite">Хотите перейти на сайт для ее загрузки?</sys:String>
+    <sys:String x:Key="String_SaveAs">Сохранить все</sys:String>
+    <sys:String x:Key="String_ImportFile">Импортировать</sys:String>
+    <sys:String x:Key="String_ErrorLoadingDataFile">Ошибка загрузки файла данных</sys:String>
+    <sys:String x:Key="String_DataFiles">Файл данных</sys:String>
+
+    <sys:String x:Key="String_ErrorOpeningFile">Ошибка открытия файла {0}.</sys:String>
+    <sys:String x:Key="String_ErrorLoadingFile">Ошибка загрузки файла {0}.</sys:String>
+    <sys:String x:Key="String_ErrorSavingFile">Ошибка сохранения файла {0}.</sys:String>
+    <sys:String x:Key="String_SavingFavoritesBarData">Сохранить панель избранного</sys:String>
+    <sys:String x:Key="String_SavingData">Сохранить данные</sys:String>
+    <sys:String x:Key="String_SavingIconCacheDatabase">Сохранить кэш иконок</sys:String>
+    <sys:String x:Key="String_SavingApplicationConfiguration">Сохранить конфигурацию программы</sys:String>
+
+    <sys:String x:Key="String_ButtonDragAndDrop">Перетягивание кнопки</sys:String>
+    <sys:String x:Key="String_OpenFileLocation">Открыть папку файла</sys:String>
+    <sys:String x:Key="String_UnableToOpenFolder">Не удается открыть папку {0}.</sys:String>
+    <sys:String x:Key="String_Edit">Редактировать</sys:String>
+    <sys:String x:Key="String_Cut">Вырезать</sys:String>
+    <sys:String x:Key="String_Copy">Копировать</sys:String>
+    <sys:String x:Key="String_Replace">Заменить</sys:String>
+    <sys:String x:Key="String_ReplaceButton">Заменить '( {0} ) {1}' кнопку?</sys:String>
+    <sys:String x:Key="String_Paste">Вставить</sys:String>
+    <sys:String x:Key="String_Delete">Удалить</sys:String>
+    <sys:String x:Key="String_DeleteButton">Удалить '( {0} ) {1}' кнопку?</sys:String>
+    <sys:String x:Key="String_Sort">Сотрировка</sys:String>
+    <sys:String x:Key="String_SortButtons">Сортировку вкладки нельзя будет отменить. Продолжать?</sys:String>
+    <sys:String x:Key="String_FileExistsReplace">Файл {0} существует. Переписать?</sys:String>
+    <sys:String x:Key="String_FileReplaceError">Ошибка замены файла {0}.</sys:String>
+
+    <sys:String x:Key="String_TabDragandDrop">Перетягивание вкладки</sys:String>
+    <sys:String x:Key="String_ReplaceTab">"Заменить вкладку ({0}) {1}?"</sys:String>
+    <sys:String x:Key="String_DeleteTabWarning">Удаление вкладки не может быть отменено. Вы уверены, что хотите удалить вкладку ""{0}""?</sys:String>
+    <sys:String x:Key="String_DeleteTab">Удалить вкладку</sys:String>
+    <sys:String x:Key="String_ClearTabWarning">Очистка вкладки не может быть отменена. Вы уверены, что хотите очистить вкладку "{0}"?</sys:String>
+    <sys:String x:Key="String_ClearTab">Очистить вкладку</sys:String>
+    <sys:String x:Key="String_ErrorOpening">Ошибка открытия {0}</sys:String>
+    <sys:String x:Key="String_Run">Запустить</sys:String>
+    <sys:String x:Key="String_ErrorOpeningFavoritesBarConfig">Ошибка открытия файла конфигурации Избранного {0}.</sys:String>
+    <sys:String x:Key="String_ErrorSavingFavoritesBarConfig">Ошибка сохранения файла конфигурации Избранного {0}.</sys:String>
+
+    <sys:String x:Key="String_ErrorConvertingFile">Ошибка преобразования {0} в {1}</sys:String>
+    <sys:String x:Key="String_ErrorSavingIconCache">Ошибка сохранения кэша иконок {0}.</sys:String>
+    <sys:String x:Key="String_ErrorOpeningIconCache">Ошибка открытия кэша иконок {0}.</sys:String>
+
+    <sys:String x:Key="String_Version">Версия</sys:String>
+
+    <sys:String x:Key="String_SelectWorkingDirectory">Выбрать рабочую папку:</sys:String>
+    <sys:String x:Key="String_EmptyTarget">Цель не может быть пустой!</sys:String>
+    <sys:String x:Key="String_EditButton">Редактировать кнопку</sys:String>
+    <sys:String x:Key="String_CustomWindowSize">Задать размер окна</sys:String>
+    <sys:String x:Key="String_LeftMustBeZeroOrGreater">Слева должен быть ноль или больше.</sys:String>
+    <sys:String x:Key="String_TopMustBeZeroOrGreater">"Сверху должен быть ноль или больше."</sys:String>
+    <sys:String x:Key="String_WidthMustBeZeroOrGreater">"Ширина должны быть равна нулю или больше."</sys:String>
+    <sys:String x:Key="String_HeightMustBeZeroOrGreater">"Высота должна быть равна нулю или больше."</sys:String>
+    <sys:String x:Key="String_SelectFile">Выбрать файл</sys:String>
+    <sys:String x:Key="String_SelectFolder">Выбрать папку:</sys:String>
+    <sys:String x:Key="String_SelectImageFile">Выбрать Image File</sys:String>
+    <sys:String x:Key="String_Available">Доступно</sys:String>
+    <sys:String x:Key="String_Unavailable">Не доступно</sys:String>
+
+    <sys:String x:Key="String_InvalidValueFor">Недопустимое значение для '{0}'.</sys:String>
+    <sys:String x:Key="String_CustomTheme">Своя тема</sys:String>
+
+    <sys:String x:Key="String_ErrorApplyingTheme">Ошибка применения темы '{0}'.</sys:String>
+    <sys:String x:Key="String_AddTheme">Добавить тему</sys:String>
+    <sys:String x:Key="String_DeleteTheme">Удалить тему</sys:String>
+    <sys:String x:Key="String_DeleteSelectedTheme">Удалить тему {0} ?</sys:String>
+    <sys:String x:Key="String_CopyTheme">Копировать тему</sys:String>
+    <sys:String x:Key="String_ThemeName">Имя темы:</sys:String>
+    <sys:String x:Key="String_PleaseEnterAName">Введите имя.</sys:String>
+    <sys:String x:Key="String_DirExistsChooseAnother">Папка '{0}' уже есть. Выберите другое имя.</sys:String>
+    <sys:String x:Key="String_ResetTheme">Сброс темы</sys:String>
+    <sys:String x:Key="String_UseDefaultsForThisTheme">Сделать эту тему темой по умолчанию?</sys:String>
+    <sys:String x:Key="String_UnableToResetTheme">Не удается сбросить тему.</sys:String>
+    <sys:String x:Key="String_ErrorCreatingCustomFile">Ошибка создания пользовательского файла.</sys:String>
+    <sys:String x:Key="String_ErrorSavingChanges">Ошибка при сохранении изменений.</sys:String>
+
+    <sys:String x:Key="String_ErrorSettingLanguage">Ошибка настройки языка '{0}'.</sys:String>
+
+    <sys:String x:Key="String_SystemTrayMenuExit">&amp;Выход</sys:String>
+    <sys:String x:Key="String_SystemTrayMenuShow">&amp;Показать {0}</sys:String>
+
+    <sys:String x:Key="String_WindowCannotBeNothing">Окно не может быть пустым при регистрации горячей клавиши.</sys:String>
+
+    <sys:String x:Key="String_UpdateCheckFailed">Ошибка проверки обновлений.</sys:String>
+
+</ResourceDictionary>

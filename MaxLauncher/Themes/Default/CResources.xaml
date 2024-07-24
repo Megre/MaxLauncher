@@ -1,0 +1,68 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--FavoritesBar-->
+    <SolidColorBrush x:Key="FavoritesBar.Background" Color="{DynamicResource FavoritesBar.Background.Color}"/>
+    <SolidColorBrush x:Key="FavoritesBar.BorderBrush" Color="{DynamicResource FavoritesBar.Border.Color}" />
+
+    <!--FavoritesButton-->
+    <SolidColorBrush x:Key="FavoritesButton.BorderBrush" Color="{DynamicResource FavoritesButton.Border.Color}" Opacity="0.5"/>
+    <SolidColorBrush x:Key="FavoritesButton.Background" Color="{DynamicResource FavoritesButton.Background.Color}"/>
+    <SolidColorBrush x:Key="FavoritesButton.Key.Foreground" Color="{DynamicResource FavoritesButton.Key.Color}" />
+    <SolidColorBrush x:Key="FavoritesButton.Text.Foreground" Color="{DynamicResource FavoritesButton.Text.Color}" />
+
+    <SolidColorBrush x:Key="FavoritesButton.MouseOver.BorderBrush" Color="{DynamicResource FavoritesButton.MouseOver.Border.Color}"/>
+    <SolidColorBrush x:Key="FavoritesButton.MouseOver.Background" Color="{DynamicResource FavoritesButton.MouseOver.Background.Color}"/>
+    <SolidColorBrush x:Key="FavoritesButton.MouseOver.Key.Foreground" Color="{DynamicResource FavoritesButton.MouseOver.Key.Color}"/>
+    <SolidColorBrush x:Key="FavoritesButton.MouseOver.Text.Foreground" Color="{DynamicResource FavoritesButton.MouseOver.Text.Color}"/>
+
+    <SolidColorBrush x:Key="FavoritesButton.Focused.BorderBrush" Color="{DynamicResource FavoritesButton.Focused.Border.Color}"/>
+    <SolidColorBrush x:Key="FavoritesButton.Focused.Background" Color="{DynamicResource FavoritesButton.Focused.Background.Color}"/>
+    <SolidColorBrush x:Key="FavoritesButton.Focused.Key.Foreground" Color="{DynamicResource FavoritesButton.Focused.Key.Color}"/>
+    <SolidColorBrush x:Key="FavoritesButton.Focused.Text.Foreground" Color="{DynamicResource FavoritesButton.Focused.Text.Color}"/>
+    
+    <!--TabButton)-->
+    <SolidColorBrush x:Key="TabButton.BorderBrush" Color="{DynamicResource TabButton.Border.Color}" Opacity="0.5"/>
+    <SolidColorBrush x:Key="TabButton.Background" Color="{DynamicResource TabButton.Background.Color}"/>
+    <SolidColorBrush x:Key="TabButton.Key.Foreground" Color="{DynamicResource TabButton.Key.Color}" />
+    <SolidColorBrush x:Key="TabButton.Text.Foreground" Color="{DynamicResource TabButton.Text.Color}" />
+
+    <SolidColorBrush x:Key="TabButton.MouseOver.BorderBrush" Color="{DynamicResource TabButton.MouseOver.Border.Color}"/>
+    <SolidColorBrush x:Key="TabButton.MouseOver.Background" Color="{DynamicResource TabButton.MouseOver.Background.Color}"/>
+    <SolidColorBrush x:Key="TabButton.MouseOver.Key.Foreground" Color="{DynamicResource TabButton.MouseOver.Key.Color}"/>
+    <SolidColorBrush x:Key="TabButton.MouseOver.Text.Foreground" Color="{DynamicResource TabButton.MouseOver.Text.Color}"/>
+
+    <SolidColorBrush x:Key="TabButton.Focused.BorderBrush" Color="{DynamicResource TabButton.Focused.Border.Color}"/>
+    <SolidColorBrush x:Key="TabButton.Focused.Background" Color="{DynamicResource TabButton.Focused.Background.Color}"/>
+    <SolidColorBrush x:Key="TabButton.Focused.Key.Foreground" Color="{DynamicResource TabButton.Focused.Key.Color}"/>
+    <SolidColorBrush x:Key="TabButton.Focused.Text.Foreground" Color="{DynamicResource TabButton.Focused.Text.Color}"/>
+
+    <!--MainTab-->
+    <SolidColorBrush x:Key="MainTab.BorderBrush" Color="{DynamicResource MainTab.Border.Color}" Opacity="0.5"/>
+
+    <SolidColorBrush x:Key="MainTab.Tab.UnSelected.Key.Foreground" Color="{DynamicResource MainTab.Tab.UnSelected.Key.Color}" />
+    <SolidColorBrush x:Key="MainTab.Tab.UnSelected.Text.Foreground" Color="{DynamicResource MainTab.Tab.UnSelected.Text.Color}" />
+    <SolidColorBrush x:Key="MainTab.Tab.UnSelected.Background" Color="{DynamicResource MainTab.Tab.UnSelected.Background.Color}" />
+
+    <SolidColorBrush x:Key="MainTab.Tab.MouseOver.Background" Color="{DynamicResource MainTab.Tab.MouseOver.Background.Color}"/>
+    <SolidColorBrush x:Key="MainTab.Tab.MouseOver.Foreground" Color="{DynamicResource MainTab.Tab.MouseOver.Text.Color}"/>
+
+    <SolidColorBrush x:Key="MainTab.Tab.Selected.Key.Foreground" Color="{DynamicResource MainTab.Tab.Selected.Key.Color}" />
+    <SolidColorBrush x:Key="MainTab.Tab.Selected.Text.Foreground" Color="{DynamicResource MainTab.Tab.Selected.Text.Color}" />
+    <SolidColorBrush x:Key="MainTab.Tab.Selected.Background" Color="{DynamicResource MainTab.Tab.Selected.Background.Color}" />
+
+    <!--Menu-->
+    <SolidColorBrush x:Key="Menu.Foreground" Color="{DynamicResource Menu.Text.Color}" />
+    <SolidColorBrush x:Key="Menu.Background" Color="{DynamicResource Menu.Background.Color}" />
+    <SolidColorBrush x:Key="Menu.BorderBrush" Color="{DynamicResource Menu.Border.Color}" />
+    <SolidColorBrush x:Key="Menu.Disabled.Foreground" Color="{DynamicResource Menu.Disabled.Text.Color}" />
+
+    <!--MainGridSplitter-->
+    <SolidColorBrush x:Key="MainGridSplitter.Background" Color="{DynamicResource MainGridSplitter.Background.Color}" />
+
+    <!--Window-->
+    <SolidColorBrush x:Key="Window.Background" Color="{DynamicResource Window.Background.Color}" />
+    <SolidColorBrush x:Key="Window.Foreground" Color="{DynamicResource Window.Text.Color}" />
+
+</ResourceDictionary>

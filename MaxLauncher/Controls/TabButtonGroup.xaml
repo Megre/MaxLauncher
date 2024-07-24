@@ -1,0 +1,96 @@
+﻿<ContentControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MaxLauncher" 
+             x:Class="TabButtonGroup"
+             Margin="5"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="firstRow">
+                <RowDefinition.Style>
+                    <Style>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding DataContext.HideTabButtonsRow1, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}" Value="True">
+                                <Setter Property="RowDefinition.Height" Value="1" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </RowDefinition.Style>
+            </RowDefinition>
+            <RowDefinition x:Name="secondRow">
+                <RowDefinition.Style>
+                    <Style>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding DataContext.HideTabButtonsRow2, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}" Value="True">
+                                <Setter Property="RowDefinition.Height" Value="1" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </RowDefinition.Style>
+            </RowDefinition>
+            <RowDefinition x:Name="thirdRow">
+                <RowDefinition.Style>
+                    <Style>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding DataContext.HideTabButtonsRow3, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}" Value="True">
+                                <Setter Property="RowDefinition.Height" Value="1" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </RowDefinition.Style>
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <local:TabButton x:Name="TB16" Scancode="16" Grid.Row="0" Grid.Column="0"/>
+        <local:TabButton x:Name="TB17" Scancode="17" Grid.Row="0" Grid.Column="1"/>
+        <local:TabButton x:Name="TB18" Scancode="18" Grid.Row="0" Grid.Column="2"/>
+        <local:TabButton x:Name="TB19" Scancode="19" Grid.Row="0" Grid.Column="3"/>
+        <local:TabButton x:Name="TB20" Scancode="20" Grid.Row="0" Grid.Column="4"/>
+        <local:TabButton x:Name="TB21" Scancode="21" Grid.Row="0" Grid.Column="5"/>
+        <local:TabButton x:Name="TB22" Scancode="22" Grid.Row="0" Grid.Column="6"/>
+        <local:TabButton x:Name="TB23" Scancode="23" Grid.Row="0" Grid.Column="7"/>
+        <local:TabButton x:Name="TB24" Scancode="24" Grid.Row="0" Grid.Column="8"/>
+        <local:TabButton x:Name="TB25" Scancode="25" Grid.Row="0" Grid.Column="9"/>
+
+        <local:TabButton x:Name="TB30" Scancode="30" Grid.Row="1" Grid.Column="0"/>
+        <local:TabButton x:Name="TB31" Scancode="31" Grid.Row="1" Grid.Column="1"/>
+        <local:TabButton x:Name="TB32" Scancode="32" Grid.Row="1" Grid.Column="2"/>
+        <local:TabButton x:Name="TB33" Scancode="33" Grid.Row="1" Grid.Column="3"/>
+        <local:TabButton x:Name="TB34" Scancode="34" Grid.Row="1" Grid.Column="4"/>
+        <local:TabButton x:Name="TB35" Scancode="35" Grid.Row="1" Grid.Column="5"/>
+        <local:TabButton x:Name="TB36" Scancode="36" Grid.Row="1" Grid.Column="6"/>
+        <local:TabButton x:Name="TB37" Scancode="37" Grid.Row="1" Grid.Column="7"/>
+        <local:TabButton x:Name="TB38" Scancode="38" Grid.Row="1" Grid.Column="8"/>
+        <local:TabButton x:Name="TB39" Scancode="39" Grid.Row="1" Grid.Column="9"/>
+
+        <local:TabButton x:Name="TB44" Scancode="44" Grid.Row="2" Grid.Column="0"/>
+        <local:TabButton x:Name="TB45" Scancode="45" Grid.Row="2" Grid.Column="1"/>
+        <local:TabButton x:Name="TB46" Scancode="46" Grid.Row="2" Grid.Column="2"/>
+        <local:TabButton x:Name="TB47" Scancode="47" Grid.Row="2" Grid.Column="3"/>
+        <local:TabButton x:Name="TB48" Scancode="48" Grid.Row="2" Grid.Column="4"/>
+        <local:TabButton x:Name="TB49" Scancode="49" Grid.Row="2" Grid.Column="5"/>
+        <local:TabButton x:Name="TB50" Scancode="50" Grid.Row="2" Grid.Column="6"/>
+        <local:TabButton x:Name="TB51" Scancode="51" Grid.Row="2" Grid.Column="7"/>
+        <local:TabButton x:Name="TB52" Scancode="52" Grid.Row="2" Grid.Column="8"/>
+        <local:TabButton x:Name="TB53" Scancode="53" Grid.Row="2" Grid.Column="9"/>
+    </Grid>
+
+</ContentControl>
+

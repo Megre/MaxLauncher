@@ -1,0 +1,35 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:MaxLauncher"
+    xmlns:resources="clr-namespace:MaxLauncher.My"
+    x:Class="AboutDialog"
+    Title="{DynamicResource AboutDialog_Title}"
+    WindowStartupLocation="CenterOwner" 
+    Width="500"
+    Height="500"
+    ShowInTaskbar="False" 
+    Loaded="AboutDialog_Loaded"
+    Initialized="AboutDialog_Initialized"
+    Style="{DynamicResource AboutDialogWindowStyle}">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="0,0,0,10" >
+            <WrapPanel VerticalAlignment="Center">
+                <Image x:Name="appImage" Margin="5,0,5,5" Width="32"/>
+                <Label x:Name="titleLabel" Margin="0" FontWeight="Bold" VerticalContentAlignment="Center" />
+            </WrapPanel>
+            <Label x:Name="versionLabel" Margin="0" />
+            <Label x:Name="copyrightLabel" Margin="0" />
+            <Label x:Name="companyLabel" Margin="0" />
+        </StackPanel>
+        <TextBox x:Name="licenseText" Margin="0,0,0,15" Grid.Row="1" IsReadOnly="True" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" TextWrapping="WrapWithOverflow" />
+        <Button Grid.Row="2" Content="{DynamicResource Button_Close}" IsDefault="True" Click="CloseButton_Click"
+            MinWidth="75" MinHeight="25" SnapsToDevicePixels="True" IsCancel="True" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    </Grid>
+</Window>

@@ -1,0 +1,199 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="EditButtonDialog"
+    d:DesignWidth="600" d:DesignHeight="500" Width="700"
+    Title="{DynamicResource EditButtonDialog_Title}"
+    WindowStartupLocation="CenterOwner" SizeToContent="Height" ShowInTaskbar="False" 
+    Loaded="EditButtonDialog_Loaded"
+    Initialized="EditButtonDialog_Initialized"
+    Style="{DynamicResource EditButtonDialogWindowStyle}">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TabControl x:Name="editTabControl" Grid.Row="0" Grid.IsSharedSizeScope="True" Padding="15">
+            <TabItem Header="{DynamicResource EditButtonDialog_Tab_Properties}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.Row="0" Grid.Column="0" Padding="5" 
+                            HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image x:Name="iconImage" Width="32" Height="32" Margin="5"/>
+                    </Border>
+                    <ComboBox Grid.Row="0" Grid.Column="1" 
+						x:Name="iconComboBox"
+                                SelectionChanged="iconComboBox_SelectionChanged" 
+                                HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"
+                                PreviewKeyDown="ComboBox_PreviewKeyDown">
+                        <ComboBoxItem Tag="0" Content="{DynamicResource EditButtonDialog_IconComboBox_Select}" IsSelected="True" Visibility="Collapsed"/>
+                        <ComboBoxItem Tag="1" Content="{DynamicResource EditButtonDialog_IconComboBox_DefaultIcon}"/>
+                        <ComboBoxItem Tag="2" Content="{DynamicResource EditButtonDialog_IconComboBox_BrowseIcon}"/>
+                        <ComboBoxItem Tag="3" Content="{DynamicResource EditButtonDialog_IconComboBox_BrowseImage}"/>
+                    </ComboBox>
+
+                    <Label Content="{DynamicResource EditButtonDialog_Label_Name}" Grid.Row="1" Grid.Column="0" Target="{Binding ElementName=nameTextBox}" Margin="5" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+                    <TextBox Grid.Row="1" Grid.Column="1" x:Name="nameTextBox" Margin="5" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" MaxLines="2" MinLines="2" VerticalContentAlignment="Top" />
+
+                    <Label Content="{DynamicResource EditButtonDialog_Label_Target}" Grid.Row="2" Grid.Column="0" Target="{Binding ElementName=targetTextBox}" Margin="5" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+                    <TextBox Grid.Row="2" Grid.Column="1" x:Name="targetTextBox" Margin="5" VerticalContentAlignment="Center"/>
+                    <ComboBox Grid.Row="2" Grid.Column="2" 
+								x:Name="targetComboBox"
+                                SelectionChanged="targetComboBox_SelectionChanged" Margin="5"
+                                PreviewKeyDown="ComboBox_PreviewKeyDown">
+                        <ComboBoxItem Tag="0" Content="{DynamicResource EditButtonDialog_TargetComboBox_Browse}" IsSelected="True" Visibility="Collapsed"/>
+                        <ComboBoxItem Tag="1" Content="{DynamicResource EditButtonDialog_TargetComboBox_File}"/>
+                        <ComboBoxItem Tag="2" Content="{DynamicResource EditButtonDialog_TargetComboBox_Folder}"/>
+                    </ComboBox>
+
+                    <Label Content="{DynamicResource EditButtonDialog_Label_Arguments}" Grid.Row="3" Grid.Column="0" Target="{Binding ElementName=argumentsTextBox}" Margin="5" VerticalContentAlignment="Center"/>
+                    <TextBox Grid.Row="3" Grid.Column="1" x:Name="argumentsTextBox" Margin="5" VerticalContentAlignment="Center" />
+
+                    <Label Content="{DynamicResource EditButtonDialog_Label_StartIn}" Grid.Row="4" Grid.Column="0" Target="{Binding ElementName=startInTextBox}" Margin="5" VerticalContentAlignment="Center"/>
+                    <TextBox Grid.Row="4" Grid.Column="1" x:Name="startInTextBox" Margin="5" VerticalContentAlignment="Center" />
+                    <Button Content="{DynamicResource EditButtonDialog_Button_BrowseFolder}" Grid.Row="4" Grid.Column="2" Click="BrowseFolderButton_Click" 
+                            MinWidth="75"
+                            MinHeight="25"
+                            Margin="5" Padding="5,0,5,0" SnapsToDevicePixels="True"/>
+
+                    <Label Content="{DynamicResource EditButtonDialog_Label_Description}" Grid.Row="5" Grid.Column="0" Target="{Binding ElementName=descriptionTextBox}" Margin="5" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+                    <TextBox Grid.Row="5" Grid.Column="1" x:Name="descriptionTextBox" Margin="5" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" MaxLines="2" MinLines="2" VerticalContentAlignment="Top" TextWrapping="Wrap"/>
+
+                    <CheckBox Content="{DynamicResource EditButtonDialog_CheckBox_RunAsAdministrator}" Grid.Row="6" Grid.ColumnSpan="2" 
+						x:Name="runAsAdminCheckBox" Margin="10,5,5,5" />
+
+                    <Label Content="{DynamicResource EditButtonDialog_Label_GroupID}" Grid.Row="7" Grid.Column="0" Target="{Binding ElementName=groupIDComboBox}" Margin="5" VerticalContentAlignment="Center"/>
+                    <ComboBox Grid.Row="7" Grid.Column="1" 
+						x:Name="groupIDComboBox" Initialized="groupIDComboBox_Initialized" TextBoxBase.TextChanged="groupIDComboBox_TextChanged" IsEditable="True" Margin="5" VerticalContentAlignment="Center"/>
+                    <Button x:Name="viewListButton" Content="{DynamicResource EditButtonDialog_Button_ViewList}" Grid.Row="7" Grid.Column="2" Click="ViewListButton_Click" 
+                            MinWidth="75"
+                            MinHeight="25"
+                            Margin="5" Padding="5,0,5,0" SnapsToDevicePixels="True"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="windowTabItem" Header="{DynamicResource EditButtonDialog_Tab_Window}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Content="{DynamicResource EditButtonDialog_GroupBox_LocationSize}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,0,0,5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+                    <Border x:Name="windowPreviewBorder" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,0,0,10" 
+                        BorderBrush="LightBlue"
+                        BorderThickness="3"
+                        Width="80"
+                        Height="80" >
+                        <Rectangle x:Name="windowPreviewRectangle" Fill="#FF4F8EE8" StrokeThickness="1" Stroke="Black" Margin="0"/>
+                    </Border>
+
+                    <Label Content="{DynamicResource EditButtonDialog_Label_Run}" Grid.Row="2" Grid.Column="0" Target="{Binding ElementName=runComboBox}" Margin="5" VerticalContentAlignment="Center"/>
+                    <ComboBox Grid.Row="2" Grid.Column="1" x:Name="runComboBox" 
+                            SelectionChanged="runComboBox_SelectionChanged" Margin="5" VerticalContentAlignment="Center">
+                        <ComboBoxItem Content="{DynamicResource EditButtonDialog_RunComboBox_Normal}" IsSelected="True"/>
+                        <ComboBoxItem Content="{DynamicResource EditButtonDialog_RunComboBox_Hidden}" />
+                        <ComboBoxItem Content="{DynamicResource EditButtonDialog_RunComboBox_Minimized}" />
+                        <ComboBoxItem Content="{DynamicResource EditButtonDialog_RunComboBox_Maximized}" />
+                    </ComboBox>
+
+                    <Label Content="{DynamicResource EditButtonDialog_Label_WindowTitle}" Grid.Row="3" Grid.Column="0" Target="{Binding ElementName=windowTitleComboBox}" Margin="5" VerticalContentAlignment="Center"/>
+                    <ComboBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
+            					x:Name="windowTitleComboBox" KeyUp="WindowTitleComboBox_KeyUp" SelectionChanged="WindowTitleComboBox_SelectionChanged" Initialized="windowTitleComboBox_Initialized" IsEditable="True" Margin="5" VerticalContentAlignment="Center"/>
+
+                    <Label Content="{DynamicResource EditButtonDialog_Label_WindowProcessName}" Grid.Row="4" Grid.Column="0" Target="{Binding ElementName=windowProcessNameComboBox}" Margin="5" VerticalContentAlignment="Center"/>
+                    <ComboBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" 
+        					x:Name="windowProcessNameComboBox" Initialized="windowProcessNameComboBox_Initialized" IsEditable="True" Margin="5" VerticalContentAlignment="Center"/>
+
+                    <Label x:Name="sizeLabel" Content="{DynamicResource EditButtonDialog_Label_LocationSizePresets}" Grid.Row="5" Grid.Column="0" Target="{Binding ElementName=sizeComboBox}" Margin="5" />
+                    <ComboBox x:Name="sizeComboBox" Margin="5" Grid.Row="5" Grid.Column="1"
+                            Loaded="sizeComboBox_Loaded"
+                            SelectionChanged="sizeComboBox_SelectionChanged" 
+                            VerticalContentAlignment="Center">
+                        <ComboBoxItem Tag="0" Content="{DynamicResource EditButtonDialog_SizeComboBox_Normal}"/>
+                        <ComboBoxItem Tag="1" Content="{DynamicResource EditButtonDialog_SizeComboBox_Left}"/>
+                        <ComboBoxItem Tag="2" Content="{DynamicResource EditButtonDialog_SizeComboBox_Right}"/>
+                        <ComboBoxItem Tag="3" Content="{DynamicResource EditButtonDialog_SizeComboBox_Top}"/>
+                        <ComboBoxItem Tag="4" Content="{DynamicResource EditButtonDialog_SizeComboBox_Bottom}"/>
+                        <ComboBoxItem Tag="5" Content="{DynamicResource EditButtonDialog_SizeComboBox_TopLeft}"/>
+                        <ComboBoxItem Tag="6" Content="{DynamicResource EditButtonDialog_SizeComboBox_BottomLeft}"/>
+                        <ComboBoxItem Tag="7" Content="{DynamicResource EditButtonDialog_SizeComboBox_TopRight}"/>
+                        <ComboBoxItem Tag="8" Content="{DynamicResource EditButtonDialog_SizeComboBox_BottomRight}"/>
+                        <ComboBoxItem Tag="9" Content="{DynamicResource EditButtonDialog_SizeComboBox_Custom}"/>
+                    </ComboBox>
+                    <Label Content="{DynamicResource EditButtonDialog_Label_LocationSizePresetsComment}"
+                           Grid.Row="5" Grid.Column="2" Margin="5" VerticalContentAlignment="Center" IsEnabled="False" />
+
+                    <GroupBox x:Name="sizeGroupBox" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" 
+                        Header="{DynamicResource EditButtonDialog_GroupBox_Custom}" Margin="10">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Row="0" Grid.Column="0" Content="{DynamicResource EditButtonDialog_Label_ReferenceWindow}" Target="{Binding ElementName=windowReferenceComboBox}" Margin="5" VerticalContentAlignment="Center"/>
+                            <ComboBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" x:Name="windowReferenceComboBox" 
+                                Initialized="windowReferenceComboBox_Initialized"  
+                                SelectionChanged="windowReferenceComboBox_SelectionChanged" Margin="5" VerticalContentAlignment="Center"/>
+
+                            <Label Grid.Row="1" Grid.Column="0" Content="{DynamicResource EditButtonDialog_Label_Left}" Target="{Binding ElementName=leftTextBox}" Margin="5" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="leftTextBox" Grid.Row="1" Grid.Column="1" Margin="5" VerticalContentAlignment="Center"/>
+
+                            <Label Grid.Row="2" Grid.Column="0" Content="{DynamicResource EditButtonDialog_Label_Top}" Target="{Binding ElementName=topTextBox}" Margin="5" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="topTextBox" Grid.Row="2" Grid.Column="1" Margin="5" VerticalContentAlignment="Center"/>
+
+                            <Label Grid.Row="1" Grid.Column="2" Content="{DynamicResource EditButtonDialog_Label_Width}" Target="{Binding ElementName=widthTextBox}" Margin="5" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="widthTextBox" Grid.Row="1" Grid.Column="3" Margin="5" VerticalContentAlignment="Center"/>
+
+                            <Label Grid.Row="2" Grid.Column="2" Content="{DynamicResource EditButtonDialog_Label_Height}" Target="{Binding ElementName=heightTextBox}" Margin="5" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="heightTextBox" Grid.Row="2" Grid.Column="3" Margin="5" VerticalContentAlignment="Center"/>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <StackPanel Grid.Row="1"
+				Orientation="Horizontal"
+				HorizontalAlignment="Center"
+                Margin="0,15,0,0" >
+            <Button Content="{DynamicResource Button_OK}" HorizontalAlignment="Center" Click="OKButton_Click" Margin="5,0,5,0" MinHeight="25" MinWidth="75" SnapsToDevicePixels="True" IsDefault="True" />
+            <Button Content="{DynamicResource Button_Cancel}" HorizontalAlignment="Center" IsCancel="True" Margin="5,0,5,0" MinHeight="25" MinWidth="75" SnapsToDevicePixels="True" />
+        </StackPanel>
+    </Grid>
+</Window>
