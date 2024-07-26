@@ -5,6 +5,8 @@ This project adds the following features (so may be named as version 1.32.0.0 :)
 - Import `.mld` data file. An Import menu is added to the Data menu
 - Check duplicated Buttons in Tabs. The report is listed in the log file `FileImportLog.md` 
 
+<img src="https://raw.githubusercontent.com/Megre/Media/main/image-20240726201228114.png" alt="image-20240726201228114" style="zoom: 33%;" />
+
 I have several computers with the same portable applications at the same path (`mklink` tool can be used if not). Sometimes different new apps are added to the two computers, but they will be synchronized later. I modifed the `.mld` in both computers. I wish the `.mld` can be synchronized too. Thus, this project aimed to:
 - Allow you modify `ComputerA.mld` and `ComputerB.mld` respectively
 - Support synchronization of `.mld` files by importing `ComputerB.mld` to `ComputerA.mld` and vice versa
